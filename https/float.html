@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CSS flex test</title>
+
+<style>
+
+/* Autoprefixer CSS online : https://autoprefixer.github.io/
+ flexbox를 ie10이 다른 형태로 지원하는 것을 보정하기 위해 유리
+ */
+
+*, *:before, *:after {box-sizing: border-box;}
+*:focus	{ outline: none; }
+
+HTML { font-size:100%; padding:0;margin:0; }
+BODY { min-width:100%; min-height:100%; font-size:100%; padding:0; margin:0; color:white;background-color:black; text-align: center; }
+
+div { border: none; font-size:1rem; }
+.sub { width:100%; height:100%; margin: 0;
+	font-size: 1.1em;
+	color:black; background-color:yellow; }
+
+#container { background-color:white;
+	width:100%;	max-width: 1400px; height:100%;
+	margin: 0 auto; padding:0;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
+}
+#st_header { background-color:red;
+	-webkit-box-ordinal-group:2;
+		-ms-flex-order:1;
+			order:1;
+	width:100%;
+	height:7rem; }
+#st_contents { background-color:blue;
+	-webkit-box-ordinal-group:3;
+		-ms-flex-order:2;
+			order:2;
+	height:30rem; }
+#st_info { background-color:green;
+	-webkit-box-ordinal-group:4;
+		-ms-flex-order:3;
+			order:3;
+	height:30rem; }
+#footer { background-color:cyan;
+	-webkit-box-ordinal-group:5;
+		-ms-flex-order:4;
+			order:4;
+	padding:1rem; margin:0;
+	width:100%;
+	height:5rem; }
+
+/* For mobile phones: */
+
+[id^="st_"] {
+	padding:1rem;
+	width: 100%;
+	margin:0 0 1.5rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	#container {
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+			-ms-flex-direction: row;
+				flex-direction: row;
+	}
+	.pane_right {
+		width: 25%; min-width: 18rem; max-width: 23rem;
+		margin:0 0 0 1.5rem; }
+	.pane_left {
+		-webkit-box-flex: 10;
+			-ms-flex-positive: 10;
+				flex-grow: 10;
+		width:auto; margin:0; }
+	#st_header {
+		margin:0 0 1.5rem 0; }
+	#footer {
+		margin:1.5rem 0 0 0; }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id=container>
+	<div id=st_header>
+		<div class="sub">Header Section</div>
+	</div>
+	<div id=st_info class="pane_right">
+		<div class="sub">Info Section</div>
+	</div>
+	<div id=st_contents class="pane_left">
+		<div class="sub">Contents Section</div>
+	</div>
+	<div id=footer>
+			<div class="sub">Footer Section</div>
+	</div>
+</div>
+</body>
+</html>

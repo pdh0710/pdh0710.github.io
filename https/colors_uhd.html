@@ -1,0 +1,456 @@
+<HTML><HEAD><TITLE>Color Bars : Fine Grain</TITLE></HEAD>
+<BODY bgcolor=#808080>
+<style>
+.bcol {width:14px; height:80px;}
+.bcol2 {width:14px; height:160px;}
+.bcol3 {width:14px; height:320px;}
+</style>
+<TABLE cellSpacing=0 cellPadding=0 align=center border=0>
+<TBODY>
+<script language="JavaScript">
+
+function ito16(i)
+{
+	switch(i) {
+		case 15 :
+			return 'f';
+		case 14 :
+			return 'e';
+		case 13 :
+			return 'd';
+		case 12 :
+			return 'c';
+		case 11 :
+			return 'b';
+		case 10 :
+			return 'a';
+	}
+	return i.toString();
+}
+
+function itoh(i)
+{
+	if(i > 255)
+		return 'ff';
+	if(i < 0)
+		return '00';
+	return ito16(Math.floor(i/16)) + ito16(i%16);
+}
+
+function blank() {
+	document.writeln('<TR>');
+	for(let i=0; i<256; i++) document.writeln('<TD class=bcol>&nbsp;</TD>');
+	document.writeln('</TR>');
+}
+
+function line(cl, fbgc) {
+	document.writeln('<TR>');
+	for(let i=0, j; i<256; i++) {
+		j = itoh(i);
+		document.writeln('<TD bgColor=#' + fbgc(j) + ' class=' + cl + '>&nbsp;</TD>');
+	}
+	document.writeln('</TR>');
+	document.writeln('<TR>');
+	for(let i=255, j; i>=0; i--) {
+		j = itoh(i);
+		document.writeln('<TD bgColor=#' + fbgc(j) + ' class=' + cl + '>&nbsp;</TD>');
+	}
+	document.writeln('</TR>');
+}
+
+var i, j;
+
+
+blank();
+line('bcol3', function (s) {
+	return s + s + s;
+})
+blank();
+
+
+line('bcol2', function (s) {
+	return s + '0000';
+})
+line('bcol2', function (s) {
+	return '00' + s + '00';
+})
+line('bcol2', function (s) {
+	return '0000' + s;
+})
+blank();
+line('bcol2', function (s) {
+	return s + s + '00';
+})
+line('bcol2', function (s) {
+	return s + '00' + s;
+})
+line('bcol2', function (s) {
+	return '00' + s + s;
+})
+blank();
+
+line('bcol2', function (s) {
+	return s + '4040';
+})
+line('bcol2', function (s) {
+	return '40' + s + '40';
+})
+line('bcol2', function (s) {
+	return '4040' + s;
+})
+blank();
+line('bcol2', function (s) {
+	return s + s + '40';
+})
+line('bcol2', function (s) {
+	return s + '40' + s;
+})
+line('bcol2', function (s) {
+	return '40' + s + s;
+})
+blank();
+
+line('bcol2', function (s) {
+	return s + '8080';
+})
+line('bcol2', function (s) {
+	return '80' + s + '80';
+})
+line('bcol2', function (s) {
+	return '8080' + s;
+})
+blank();
+line('bcol2', function (s) {
+	return s + s + '80';
+})
+line('bcol2', function (s) {
+	return s + '80' + s;
+})
+line('bcol2', function (s) {
+	return '80' + s + s;
+})
+blank();
+
+line('bcol2', function (s) {
+	return s + 'c0c0';
+})
+line('bcol2', function (s) {
+	return 'c0' + s + 'c0';
+})
+line('bcol2', function (s) {
+	return 'c0c0' + s;
+})
+blank();
+line('bcol2', function (s) {
+	return s + s + 'c0';
+})
+line('bcol2', function (s) {
+	return s + 'c0' + s;
+})
+line('bcol2', function (s) {
+	return 'c0' + s + s;
+})
+blank();
+
+line('bcol2', function (s) {
+	return s + 'ffff';
+})
+line('bcol2', function (s) {
+	return 'ff' + s + 'ff';
+})
+line('bcol2', function (s) {
+	return 'ffff' + s;
+})
+blank();
+line('bcol2', function (s) {
+	return s + s + 'ff';
+})
+line('bcol2', function (s) {
+	return s + 'ff' + s;
+})
+line('bcol2', function (s) {
+	return 'ff' + s + s;
+})
+blank();
+
+
+/*
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TH class=bcol>'+j+'</TH>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+'0000 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+'0800 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+'0008 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+'0808 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#00'+j+'00 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#08'+j+'00 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#00'+j+'08 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#08'+j+'08 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#0000'+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#0800'+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#0008'+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#0808'+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#00'+j+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#08'+j+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+'00'+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+'08'+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+j+'00 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+j+'08 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+
+
+/*
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TH class=bcol>'+j+'</TH>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#ff'+j+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#f8'+j+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+'ff'+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+'f8'+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+j+'ff class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+j+'f8 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+'ffff class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+'f8ff class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+'fff8 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+'f8f8 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#ff'+j+'ff class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#f8'+j+'ff class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#ff'+j+'f8 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#f8'+j+'f8 class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#ffff'+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#f8ff'+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#fff8'+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#f8f8'+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+/*
+
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TH class=bcol>'+j+'</TH>');
+}
+document.writeln('</TR>');
+
+/*
+document.writeln('<TR>');
+for(i=0; i<=64; i++) {
+	j = itoh(i*4);
+	document.writeln('<TD bgColor=#'+j+j+j+' class=bcol>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+*/
+
+</script>
+
+</TBODY></TABLE>
+</BODY>
+</HTML>

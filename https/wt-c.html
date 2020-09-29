@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<TITLE>Date and Weather Information</TITLE>
+<style type="text/css">
+*, *:before, *:after {box-sizing: border-box;}
+HTML {font-size:100%;padding:0;margin:0;}
+BODY {font-size:100%;padding:0;margin:0;color:white;background-color:transparent;}
+
+#bg {position:absolute;width:auto;height:auto;margin:0;padding:0;background-color:transparent;border-radius:5px 5px 0 0;overflow:hidden;}
+
+.sub {position:absolute;overflow:hidden;z-index:1;}
+.cover {position:absolute;overflow:hidden;background-color:transparent;z-index:2;cursor:pointer;}
+div[id^=row] {position:relative;overflow:hidden;width:471px;z-index:1;}
+
+#row_wth {height:494px;padding:0;margin:0;}
+#row_wth .sub {left:0;top:-22px;width:471px;height:623px;}
+#row_wth .cover {left:0;top:0;width:471px;height:601px;}
+
+#row_foot {height:32px;color:#f9a825;background-color:hsla(220, 56%, 52%, 0.7);;padding:10px 10px 0 10px;font-family:굴림체;font-size:12px;text-align:left;vertical-align:top;border-radius:0 0 5px 5px;}
+#row_foot A {font-family:inherit;font-size:inherit;font-weight:bold;line-height:inherit;letter-spacing:inherit;color:#fff;text-decoration:none;padding:0 5px 0 5px;}
+#row_foot A:hover {color:black;background-color:white;}
+
+.sat {display:block; margin:20px 0 0 0; padding:0;}
+.sat IMG {width:512px; margin:0; padding:0; visibility:hidden;}
+#sat0 { width:512px; height:512px; }
+#sat1 { width:512px; height:444px; }
+
+</style>
+<script type="text/javascript" src="common.js"></script>
+</HEAD>
+<BODY>
+<div id=bg>
+	<div id=row_wth>
+		<iframe class=sub src = "https://www.kma.go.kr/home/index.tab.now-ten.jsp?unit=M" frameborder='0' framespacing='0' marginheight='0' marginwidth='0' scrolling='no' vspace='0' allowtransparency="true"></iframe>
+		<div class=cover onclick='window.open("https://www.weather.go.kr/weather/main.jsp", "_blank");'></div>
+	</div>
+	<div id=row_foot>
+		&bull; 날씨정보 :<a href="https://www.weather.go.kr/weather/main.jsp" target=_blank>한국기상청</a> &nbsp; &bull; WindMap :<a href="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-225.12,28.82" target=_blank>nullschool</a>,<a href="https://www.weather.go.kr/weather/home/earth/index.jsp" target=_blank>기상청</a>
+<!--
+		&bull; 날짜정보:<a href="http://astro.kasi.re.kr/" target=_blank>한국천문연구원</a>
+ -->
+	</div>
+	<a class=sat href="http://www.weather.go.kr/weather/images/satellite_basic03.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&area=k&data=ir1" target=_blank><img src="" id=sat0></a>
+	<a class=sat href="http://www.weather.go.kr/weather/images/satellite_basic03.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&area=a&data=ir1" target=_blank><img src="" id=sat1></a>
+</div>
+
+<script type="text/javascript">
+"use strict";
+
+if( location.href!=top.location.href ) {
+	parent.frameSet('wt', document.getElementById('bg').scrollWidth, document.getElementById('bg').scrollHeight);
+}
+
+var curr = new Date(), tmInterval = 900000, postfix = '.thn.png', tm = new Array();
+var url = [
+// Old RGB
+//	'https://www.weather.go.kr/repositary/image/sat/gk2a/KO/gk2a_ami_le1b_rgb-daynight_ko020lc_',
+//	'https://www.weather.go.kr/repositary/image/sat/gk2a/EA/gk2a_ami_le1b_rgb-daynight_ea020lc_'
+// Old IR
+//	'https://www.weather.go.kr/repositary/image/sat/gk2a/KO/gk2a_ami_le1b_ir105_ko020lc_',
+//	'https://www.weather.go.kr/repositary/image/sat/gk2a/EA/gk2a_ami_le1b_ir105_ea020lc_'
+	'https://www.weather.go.kr/repositary/image/sat/coms/coms_mi_le1b_ir1_k_',
+	'https://www.weather.go.kr/repositary/image/sat/coms/coms_mi_le1b_ir1_a_'
+];
+
+function getImage(idx) {
+	var img = new Image(), src = url[idx] + tm2str(idx) + postfix;
+	img.onload = function () {
+		var e = document.getElementById('sat'+idx);
+		e.src = src;
+		e.style.visibility = 'visible';
+	}; 
+	img.onerror = function () {
+		tm[idx]--;
+		getImage(idx);
+	};
+	img.src = src;
+}
+
+
+function lz2(n) {
+	return ('000' + n).slice(-2);
+}
+
+function tm2str(idx) {
+	var d = new Date( tm[idx] * tmInterval );
+	return (((('' + d.getUTCFullYear()) + lz2(d.getUTCMonth()+1)) + lz2(d.getUTCDate())) + lz2(d.getUTCHours())) + lz2(d.getUTCMinutes());
+}
+
+tm[0] = Math.floor( curr.getTime() / tmInterval );
+tm[1] = tm[0];
+
+getImage(0);
+getImage(1);
+
+if( location.href == top.location.href )
+	addCSS('bg.css');
+
+//#debug {position:absolute;top:20px;left:500px;width:1000px;height:50px;color:black;background-color:white;font-family:굴림체;font-size:12px;text-align:left;}
+//<div id=debug>debug</div>
+//document.getElementById('debug').innerHTML = '';
+//		document.getElementById('debug').innerHTML += src + '<br />';
+
+//
+// 현재는 한반도 상공 기상위성 영상은 천리안 위성 image를 제공하는 한국기상청이 그나마 정확한 편이어서 어쩔 수 없이 쓰긴 하는데...
+// 해상도도 매우 낮고, 제공 시간 간격도 15분 단위라 크고, delay도 15분 이상 있음. 가끔 업데이트를 제 때 않는 것은 덤. service quality가 너무 떨어짐. 한국 기상청은 뭔가를 제대로 잘 해보려는 의지가 없는 집단처럼 행동한다.
+//
+// http://www.jma.go.jp/jp/gms/ : 일본 기상청. 화면에는 작게 표시되지만 실제로는 (1024*780) 크고 넓은데 흑백. 10분 단위, 가끔 빠진 것 있고 10분 정도 delay.
+// http://www.cwb.gov.tw/V7e/observe/satellite/Sat_EA.htm : 대만 기상국 크고 넓고 (1200*1200) 10분 단위, 가끔 빠진 것 있고, 20분 정도 delay. 한반도 쪽은 자세하지 않음.
+// http://en.sat24.com/en/jp/infraPolair : 단점 : 정밀도는 떨어짐. 하지만, 다소 넓은 영역을 보여주면서 10분 단위, 가끔 빠진 것 있고, 10분 정도 delay
+
+</script>
+</BODY>
+</HTML>
