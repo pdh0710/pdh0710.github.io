@@ -91,7 +91,7 @@ var bmk = [
 		[0, "https://www.ipaddress.com/", "What Is My IP Address?"],
 		[0, "https://macvendors.com/", "Find MAC Address Vendors"],
 		[-1],
-		[0, "c.html", "모니터 색조정"],
+		[0, "color_test.html", "모니터 색조정"],
 		[1, "colors.html", "Color Bars"],
 		[1, "colors_fine.html", "Color Bars Fine"],
 		[1, "colors_uhd.html", "Color Bars Ultra Fine"],
