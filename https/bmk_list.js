@@ -1,3 +1,7 @@
+// bmk[*][0] : folder header
+//		bmk[*][0][0] : indent level,  bmk[*][0][2] : 1=expand / 0 = collapse,  bmk[*][0][3] : 1='Open All' button,
+// bmk[*][>0] = bookmark
+//		bmk[*][>0][0] = (-1:blank line, 0:new line, 1:same line)
 var bmk = [
 	[	[0, "Daily News", 1, 1],
 		[0, "https://apod.nasa.gov/apod/astropix.html", "Astronomy Picture of the Day"],
