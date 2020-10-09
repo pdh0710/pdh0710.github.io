@@ -68,8 +68,9 @@ var bmk = [
 		[0, "https://windowsforum.kr/", "윈도우 포럼"],
 		[0, "http://osmanias.com/", "OSMANIA - 오에스매니아"],
 		[-1],
-		[0, "https://pdh0710.github.io/", "GitHub Pages"],
-		[0, "http://pdh0710.dothome.co.kr/", "dothome"]
+		[0, "https://pdh0710.duckdns.org/", "DuckDNS Page"],
+		[1, "https://pdh0710.github.io/", "GitHub Page"],
+		[1, "http://pdh0710.dothome.co.kr/", "DotHome"]
 	],
 	[	[0, 'Util', 1, 0],
 		[0, "https://www.openstreetmap.org/", "OpenStreetMap"],
