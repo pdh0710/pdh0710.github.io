@@ -70,7 +70,8 @@ var bmk = [
 		[-1],
 		[0, "https://lime-words.duckdns.org/", "DuckDNS : lime-words"],
 		[1, "https://pdh0710.duckdns.org/", "pdh0710"],
-		[0, "https://pdh0710.github.io/", "GitHub Page"]
+		[0, "https://pdh0710.github.io/", "GitHub Page"],
+		[0, "https://glimelite.wordpress.com/", "glimelite@wordpress.com"]
 	],
 	[	[0, 'Util', 1, 0],
 		[0, "https://www.openstreetmap.org/", "OpenStreetMap"],
