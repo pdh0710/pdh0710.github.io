@@ -119,7 +119,9 @@ var bmk = [
 		[1, "https://github.com/iPuTTY/iPuTTY/releases", "releases"],
 		[0, "https://winscp.net/eng/index.php", "WinSCP"],
 		[0, "http://www.uvnc.com/", "UltraVNC VNC Official"],
-		[0, "https://safevisit.org/", "SafeVisit 프라이버시 보호 접속"],
+		[0, "https://github.com/ValdikSS/GoodbyeDPI", "GoodbyeDPI"],
+		[1, "https://github.com/ValdikSS/GoodbyeDPI/releases", "Releases"],
+		[0, "https://safevisit.org/", "SafeVisit"],
 		[0, "https://www.nirsoft.net/", "NirSoft : small freeware utilities"],
 		[-1],
 		[0, "https://forum.xda-developers.com/", "xda developers : android custom rom"]
