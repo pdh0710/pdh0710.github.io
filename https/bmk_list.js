@@ -127,6 +127,7 @@ var bmk = [
 		[-1],
 		[0, "https://www.oracle.com/kr/cloud/sign-in.html", "Oracle Cloud"],
 		[0, "https://nextcloud.com/", "NextCloud"],
+		[1, "https://help.nextcloud.com/", "Forums"],
 		[0, "https://wordpress.org/", "WordPress.ORG"],
 		[1, "https://wordpress.com/", "WordPress.com"]
 	],
