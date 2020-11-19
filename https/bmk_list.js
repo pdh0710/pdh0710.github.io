@@ -93,6 +93,7 @@ var bmk = [
 	[	[1, 'Powered by', 1, 0],
 		[0, "https://www.duckdns.org/", "Duck DNS"],
 		[0, "https://letsencrypt.org/", "Let's Encrypt"],
+		[0, "https://pages.github.com/", "GitHub Pages"],
 		[0, "https://nextcloud.com/", "NextCloud"],
 		[1, "https://help.nextcloud.com/", "Forums"],
 		[0, "https://wordpress.org/", "WordPress.ORG"],
@@ -162,9 +163,8 @@ var bmk = [
 		[0, "https://rarbgunblocked.org/torrents.php?search=&category%5B%5D=47&category%5B%5D=52&category%5B%5D=42&category%5B%5D=46", "RARBG Rarbg Torrents, Films"]
 	],
 	[	[0, "Develope", 1, 0],
-		[0, "https://stackoverflow.com/", "StackOverflow"],
 		[0, "https://github.com/", "GitHub"],
-		[1, "https://pages.github.com/", "GitHub Pages"],
+		[0, "https://stackoverflow.com/", "StackOverflow"],
 		[0, "https://www.w3schools.com/", "w3schools"],
 		[0, "https://www.phpschool.com/", "PHPschool"],
 		[0, "http://www.hackerschool.org/", "해커스쿨"],
