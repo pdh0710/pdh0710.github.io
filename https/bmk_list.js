@@ -121,10 +121,14 @@ var bmk = [
 		[0, "http://www.uvnc.com/", "UltraVNC VNC Official"],
 		[0, "https://github.com/ValdikSS/GoodbyeDPI", "GoodbyeDPI"],
 		[1, "https://github.com/ValdikSS/GoodbyeDPI/releases", "Releases"],
-		[0, "https://safevisit.org/", "SafeVisit"],
 		[0, "https://www.nirsoft.net/", "NirSoft : small freeware utilities"],
 		[-1],
-		[0, "https://forum.xda-developers.com/", "xda developers : android custom rom"]
+		[0, "https://forum.xda-developers.com/", "xda developers : android custom rom"],
+		[-1],
+		[0, "https://www.oracle.com/kr/cloud/sign-in.html", "Oracle Cloud"],
+		[0, "https://nextcloud.com/", "NextCloud"],
+		[0, "https://wordpress.org/", "WordPress.ORG"],
+		[1, "https://wordpress.com/", "WordPress.com"]
 	],
 	[	[1, "Torrent", 0, 0],
 		[0, "https://bunyuc.com/", "번역 포럼"],
