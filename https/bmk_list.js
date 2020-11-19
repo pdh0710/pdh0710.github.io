@@ -66,12 +66,7 @@ var bmk = [
 		[-1],
 		[0, "https://namu.wiki/", "나무 위키"],
 		[0, "https://windowsforum.kr/", "윈도우 포럼"],
-		[0, "http://osmanias.com/", "OSMANIA - 오에스매니아"],
-		[-1],
-		[0, "https://lime-words.duckdns.org/", "DuckDNS : lime-words"],
-		[1, "https://pdh0710.duckdns.org/", "pdh0710"],
-		[0, "https://pdh0710.github.io/", "GitHub Page"],
-		[0, "https://glimelite.wordpress.com/", "glimelite@wordpress.com"]
+		[0, "http://osmanias.com/", "OSMANIA - 오에스매니아"]
 	],
 	[	[0, "My Web", 1, 0],
 		[0, "https://pdh0710.github.io/", "GitHub Page"],
