@@ -68,7 +68,7 @@ var bmk = [
 		[0, "https://windowsforum.kr/", "윈도우 포럼"],
 		[0, "http://osmanias.com/", "OSMANIA - 오에스매니아"]
 	],
-	[	[0, "My Server", 1, 0],
+	[	[0, "My Web", 1, 0],
 		[0, "https://pdh0710.github.io/", "GitHub Page"],
 		[1, "https://pdh0710.github.io/https/", "HTTPS"],
 		[-1],
