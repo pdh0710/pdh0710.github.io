@@ -78,7 +78,7 @@ var bmk = [
 		[0, "https://pdh0710.duckdns.org/", "pdh0710"],
 		[0, "https://glimelite.wordpress.com/", "glimelite@wordpress.com"],
 		[-1],
-		[0, "https://lime-words.duckdns.org/myip.php", "My IP address (plain text)"],
+		[0, "https://lime-worlds.duckdns.org/myip.php", "My IP address (plain text)"],
 		[0, "https://pdh0710.github.io/https/color_test.html", "모니터 색조정"],
 		[1, "https://pdh0710.github.io/https/colors.html", "Color Bars"],
 		[1, "https://pdh0710.github.io/https/colors_fine.html", "Color Bars Fine"],
