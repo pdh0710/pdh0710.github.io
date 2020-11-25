@@ -94,7 +94,7 @@ var bmk = [
 		[0, "https://wordpress.org/", "WordPress.ORG"],
 		[1, "https://wordpress.com/", "WordPress.com"],
 		[-1],
-		[0, "https://www.oracle.com/kr/cloud/sign-in.html", "Oracle Cloud"]
+		[0, "https://console.us-phoenix-1.oraclecloud.com/?provider=OracleIdentityCloudService", "Oracle Cloud : Current Login"]
 	],
 	[	[0, 'Util', 1, 0],
 		[0, "https://www.openstreetmap.org/", "OpenStreetMap"],
