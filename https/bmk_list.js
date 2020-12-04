@@ -174,6 +174,7 @@ var bmk = [
 		[1, "https://www.anaconda.com/", "Anaconda"],
 		[0, "https://www.rust-lang.org/", "Rust"],
 		[1, "https://doc.rust-lang.org/book/", "Book"],
+		[0, "https://www.php.net/", "PHP"],
 		[0, "https://www.lua.org/", "Lua"],
 		[0, "http://lesscss.org/", "{less}"],
  		[0, "https://www.typescriptlang.org/", "TypeScript"],
