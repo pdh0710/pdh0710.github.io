@@ -179,6 +179,7 @@ var bmk = [
 		[1, "https://doc.rust-lang.org/reference/", "Reference"],
 		[1, "https://doc.rust-lang.org/book/", "Book"],
 		[1, "https://doc.rust-lang.org/rust-by-example/index.html", "By Example"],
+		[1, "https://crates.io/", "crate registry"],
 		[0, "https://www.php.net/", "PHP"],
 		[0, "https://www.lua.org/", "Lua"],
 		[0, "http://lesscss.org/", "{less}"],
