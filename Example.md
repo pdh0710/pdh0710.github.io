@@ -2,7 +2,7 @@
 
 **Welcome to Nextcloud Hub, your self-hosted collaboration solution.**
 
-Nextcloud Hub is the <span style='color:red;background-color:blue;'>open source file sync and share software</span> for everyone from individuals to large enterprises and service providers. Nextcloud provides a safe, secure and compliant file sync and share solution on servers you control.
+Nextcloud Hub is the <h4 style='color:red;background-color:blue;'>open source file sync and share software</h4> for everyone from individuals to large enterprises and service providers. Nextcloud provides a safe, secure and compliant file sync and share solution on servers you control.
 
 With Nextcloud Hub you can:
 - Sync and share and access all your files and documents from all your devices
