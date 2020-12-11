@@ -74,7 +74,7 @@ var bmk = [
 		[-1],
 		[0, "https://lime-worlds.duckdns.org/", "LimeLite Worlds"],
 		[1, "https://lime-worlds.duckdns.org/blog/", "Blog"],
-		[1, "https://lime-worlds.duckdns.org/nextcloud/", "Cloud"],
+		[1, "https://lime-worlds.duckdns.org/nextcloud/apps/files/", "Cloud"],
 		[0, "https://pdh0710.duckdns.org/", "pdh0710"],
 		[0, "https://glimelite.wordpress.com/", "glimelite@wordpress.com"],
 		[-1],
