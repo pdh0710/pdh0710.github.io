@@ -87,6 +87,7 @@ var bmk = [
 	],
 	[	[1, 'Service Provider', 1, 0],
 		[0, "https://www.duckdns.org/", "Duck DNS"],
+		[0, "https://www.dynu.com/", "Dynu DNS"],
 		[0, "https://letsencrypt.org/", "Let's Encrypt"],
 		[0, "https://pages.github.com/", "GitHub Pages"],
 		[0, "https://nextcloud.com/", "NextCloud"],
