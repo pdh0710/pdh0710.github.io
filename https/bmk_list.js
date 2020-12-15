@@ -83,7 +83,7 @@ var bmk = [
 		[1, "https://pdh0710.github.io/https/colors.html", "Color Bars"],
 		[1, "https://pdh0710.github.io/https/colors_fine.html", "Color Bars Fine"],
 		[1, "https://pdh0710.github.io/https/colors_uhd.html", "Color Bars Ultra Fine"],
-		[1, "https://pdh0710.github.io/https/colors_rotate.html", "불량화소 검사"],
+		[1, "https://pdh0710.github.io/https/colors_rotate.html", "불량화소 검사"]
 	],
 	[	[1, 'Service Provider', 1, 0],
 		[0, "https://www.duckdns.org/", "Duck DNS"],
