@@ -89,13 +89,12 @@ var bmk = [
 		[0, "https://www.duckdns.org/", "Duck DNS"],
 		[0, "https://www.dynu.com/", "Dynu DNS"],
 		[0, "https://letsencrypt.org/", "Let's Encrypt"],
+		[-1],
 		[0, "https://pages.github.com/", "GitHub Pages"],
 		[0, "https://nextcloud.com/", "NextCloud"],
 		[1, "https://help.nextcloud.com/", "Forums"],
 		[0, "https://wordpress.org/", "WordPress.ORG"],
-		[1, "https://wordpress.com/", "WordPress.com"],
-		[-1],
-		[0, "https://console.us-phoenix-1.oraclecloud.com/?provider=OracleIdentityCloudService", "Oracle Cloud : Current Login"]
+		[1, "https://wordpress.com/", "WordPress.com"]
 	],
 	[	[0, 'Util', 1, 0],
 		[0, "https://www.openstreetmap.org/", "OpenStreetMap"],
