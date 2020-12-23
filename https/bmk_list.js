@@ -163,6 +163,7 @@ var bmk = [
 		[0, "https://stackoverflow.com/", "StackOverflow"],
 		[0, "https://www.w3schools.com/", "w3schools"],
 		[0, "https://www.phpschool.com/", "PHPschool"],
+		[0, "http://happycgi.com/", "Happy CGI - 각종 소스 코드"],
 		[0, "http://www.hackerschool.org/", "해커스쿨"],
 		[0, "https://caniuse.com/", "Can I Use"],
 		[1, "https://html5test.com/", "HTML5test"],
