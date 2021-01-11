@@ -76,7 +76,7 @@ var bmk = [
 		[1, "https://lime-worlds.duckdns.org/blog/", "Blog"],
 		[1, "https://lime-worlds.duckdns.org/media", "Media"],
 		[1, "https://lime-worlds.duckdns.org/upload", "Upload"],
-		[0, "https://pdh0710.duckdns.org/", "pdh0710"],
+		[0, "https://pdh0710.ddnsfree.com/", "pdh0710"],
 		[0, "https://glimelite.wordpress.com/", "glimelite@wordpress.com"],
 		[-1],
 		[0, "https://lime-worlds.duckdns.org/myip.php", "My IP address (plain text)"],
