@@ -68,10 +68,10 @@ div[id^=row] {position:relative;overflow:hidden;width:471px;z-index:1;}
 		&bull; 날짜정보:<a href="http://astro.kasi.re.kr/" target=_blank>한국천문연구원</a>
  -->
 	</div>
-	<a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ko020lc&data=true%2Bir&itv=0.5" target=_blank><img src="" id=sat0></a>
-	<a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ko020lc&data=ir105&itv=0.5" target=_blank><img src="" id=sat1></a>
-	<a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ea020lc&data=true%2Bir&itv=0.5" target=_blank><img src="" id=sat2></a>
-	<a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ea020lc&data=ir105&itv=0.5" target=_blank><img src="" id=sat3></a>
+	<a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ko020lc&data=ir105&itv=0.5" target=_blank><img src="" id=sat0></a>
+	<a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ko020lc&data=wv069&itv=0.5" target=_blank><img src="" id=sat1></a>
+	<a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ea020lc&data=ir105&itv=0.5" target=_blank><img src="" id=sat2></a>
+	<a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ea020lc&data=wv069&itv=0.5" target=_blank><img src="" id=sat3></a>
 </div>
 
 <script type="text/javascript">
@@ -83,10 +83,18 @@ if( location.href!=top.location.href ) {
 
 var curr = new Date(), postfix = '.thn.png', tm = new Array(), intv = [120000, 120000, 600000, 600000];
 var url = [
-	'https://www.weather.go.kr/repositary/image/sat/gk2a/KO/gk2a_ami_le1b_true+ir_ko020lc_',
+// RGB
+//	'https://www.weather.go.kr/repositary/image/sat/gk2a/KO/gk2a_ami_le1b_rgb-daynight_ko020lc_',
+//	'https://www.weather.go.kr/repositary/image/sat/gk2a/EA/gk2a_ami_le1b_rgb-daynight_ea020lc_'
+// IR
 	'https://www.weather.go.kr/repositary/image/sat/gk2a/KO/gk2a_ami_le1b_ir105_ko020lc_',
-	'https://www.weather.go.kr/repositary/image/sat/gk2a/EA/gk2a_ami_le1b_true+ir_ea020lc_',
-	'https://www.weather.go.kr/repositary/image/sat/gk2a/EA/gk2a_ami_le1b_ir105_ea020lc_'
+//	 https://www.weather.go.kr/repositary/image/sat/gk2a/KO/gk2a_ami_le1b_ir105_ko020lc_202008111202.thn.png
+	'https://www.weather.go.kr/repositary/image/sat/gk2a/KO/gk2a_ami_le1b_wv069_ko020lc_',
+//	 https://www.weather.go.kr/repositary/image/sat/gk2a/KO/gk2a_ami_le1b_wv069_ko020lc_202008111206.thn.png
+	'https://www.weather.go.kr/repositary/image/sat/gk2a/EA/gk2a_ami_le1b_ir105_ea020lc_',
+//	 https://www.weather.go.kr/repositary/image/sat/gk2a/EA/gk2a_ami_le1b_ir105_ea020lc_202008111150.thn.png
+	'https://www.weather.go.kr/repositary/image/sat/gk2a/EA/gk2a_ami_le1b_wv069_ea020lc_'
+//	 https://www.weather.go.kr/repositary/image/sat/gk2a/EA/gk2a_ami_le1b_wv069_ea020lc_202008111150.thn.png
 ];
 
 function lz2(n) {
@@ -120,13 +128,19 @@ for(var i=0; i<intv.length; i++) {
 if( location.href == top.location.href )
 	addCSS('bg.css');
 
-//#debug {position:absolute;top:20px;left:500px;width:1000px;height:50px;color:black;background-color:white;font-family:굴림체;font-size:12px;text-align:left;}
+/*
+	옛 기상청 날씨누리 : https://www.weather.go.kr/weather/main.jsp
+
+*/
+
+//#debug {position:absolute;top:20px;left:500px;width:1000px;height:50px;color:black;background-color:white;font-family:굴림;font-size:12px;text-align:left;}
 //<div id=debug>debug</div>
 //document.getElementById('debug').innerHTML = '';
 //		document.getElementById('debug').innerHTML += src + '<br />';
 
 //
-// 한반도 상공 기상위성 영상은 천리안2A호 image를 제공하는 한국기상청 : 가끔 업데이트를 제 때 않고, 한반도 영상은 몇분 정도 delay, 동아시아 영상은 10분 이상 delay
+// 현재는 한반도 상공 기상위성 영상은 천리안2A호 image를 제공하는 한국기상청이 제일 좋음. 큰화면 image는 해상도도 높음 .
+// 가끔 업데이트를 제 때 않고, 한반도 영상은 몇분 정도 delay, 동아시아 영상은 10분 이상 delay
 //
 // http://www.jma.go.jp/jp/gms/ : 일본 기상청. 화면에는 작게 표시되지만 실제로는 (1024*780) 크고 넓은데 흑백. 10분 단위, 가끔 빠진 것 있고 10분 정도 delay.
 // http://www.cwb.gov.tw/V7e/observe/satellite/Sat_EA.htm : 대만 기상국 크고 넓고 (1200*1200) 10분 단위, 가끔 빠진 것 있고, 20분 정도 delay. 한반도 쪽은 자세하지 않음.
