@@ -73,7 +73,7 @@ var bmk = [
 		[1, "https://pdh0710.github.io/https/", "HTTPS"],
 		[-1],
 		[0, "https://lime-worlds.duckdns.org/", "LimeLite Worlds"],
-		[1, "https://lime-worlds.duckdns.org/2see/", "To See"],
+		[1, "https://lime-worlds.duckdns.org/tosee/", "To See"],
 		[1, "https://lime-worlds.duckdns.org/media", "Media"],
 		[1, "https://lime-worlds.duckdns.org/upload", "Upload"],
 		[0, "https://pdh0710.ddnsfree.com/", "pdh0710.ddnsfree.com"],
