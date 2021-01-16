@@ -124,6 +124,7 @@ var bmk = [
 	[	[1, "Program", 1, 0],
 		[0, "https://www.cpuid.com/", "CPU-Z & HWmonitor"],
 		[0, "https://www.virtualbox.org/", "Oracle VM VirtualBox"],
+		[0, "https://remiz.co.kr/", "Remiz"],
 		[0, "https://notepad-plus-plus.org/", "Notepad++ Home"],
 		[0, "https://www.faststone.org/", "FastStone Image Viewer"],
 		[0, "https://www.sumatrapdfreader.org/", "Sumatra Free PDF Reader"],
