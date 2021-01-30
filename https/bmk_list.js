@@ -113,6 +113,7 @@ var bmk = [
 		[0, "https://get.adobe.com/kr/flashplayer/about/", "Check Adobe Flash player version"],
 		[0, "https://robinlinus.github.io/socialmedia-leak/", "Your Social Media Fingerprint"],
 		[0, "https://www.speedtest.net/", "Speedtest : 인터넷 속도 측정"],
+		[1, "https://speed.cloudflare.com/", "Cloudflare Speed Test"],
 		[1, "https://fast.com/", "Fast.com : Netflix 계열 속도 측정"],
 		[-1],
 		[0, "https://tinyurl.com/", "TinyURL.com - shorten that long URL into a tiny URL"],
