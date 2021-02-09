@@ -155,13 +155,14 @@ var bmk = [
 		[0, "http://www.jamack.net/", "자막넷"],
 		[0, "https://thepiratebay.org/", "The Pirate Bay"],
 		[0, "https://rarbg.to", "RARBG Rarbg Torrents"],
-		[0, "https://torrentwork.com/", "토렌트워크 : 자막"],
-		[0, "https://torrenthaja10.com/", "토렌트하자"]
+		[0, "https://www.xn--sm2bu7og7f0sjbmb.com/", "토렌트온리"],
+		[1, "https://torrentonly.com/smi", "자막"],
+		[0, "https://torrenthaja26.com/", "토렌트하자"]
 	],
 	[	[2, 'Daily', 1, 1],
 		[0, "http://www.cineast.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 자막자료실"],
-		[0, "https://torrenthaja10.com/bbs/board.php?bo_table=torrent_movie", "토렌트하자 - 외국영화"],
-		[0, "https://torrentsee19.com/topic/index?category1=1&category2=10", "토렌트씨 - 해외영화"],
+		[0, "https://torrenthaja26.com/bbs/board.php?bo_table=torrent_movie", "토렌트하자 - 외국영화"],
+		[0, "https://torrentsee47.com/topic/index?category1=1&category2=10", "토렌트씨 - 해외영화"],
 		[0, "https://rarbgunblocked.org/torrents.php?search=&category%5B%5D=47&category%5B%5D=52&category%5B%5D=42&category%5B%5D=46", "RARBG Rarbg Torrents, Films"]
 	],
 	[	[0, "Develope", 1, 0],
