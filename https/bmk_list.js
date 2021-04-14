@@ -254,7 +254,7 @@ var bmk = [
 		[1, "https://ssl.g9.co.kr/Member/CustomerService/AllLogin?redirectUrl=http%3a%2f%2fwww.g9.co.kr%2fMember%2fMyPage", "G9"],
 		[1, "https://www.mysmilepay.com/", "스마일페이"],
 		[0, "https://login.11st.co.kr/login/Login.tmall?returnURL=http%3A%2F%2Fbuy.11st.co.kr%2Forder%2FmyTmall.tmall%3Fmethod%3DgetMyTmallMain", "11번가"],
-		[0, "http://www.interpark.com/member/login.do?_method=initial&#38;imfsUserPath=%2Fmypage%2Fcommon%2FMyPage.do&#38;imfsUserQuery=logintgt%3Dmypage%26sid1%3Dgb%26sid2%3Dsvc&#38;FromLogin=Y&#38;str=null&#38;logintgt=mypage", "인터파크"],
+		[0, "http://www.interpark.com/mypage/common/MyPage.do?logintgt=mypage&smid1=header&smid2=login&smid3=mypage", "인터파크"],
 		[0, "http://www.gsshop.com/customer/login/loginEnterGeneral.gs?returnurl=http://www.gsshop.com/mygsshop/myShopping.gs", "GS SHOP"],
 		[1, "http://www.akmall.com/", "AK몰"],
 		[1, "https://www.hyundaihmall.com/", "H몰"],
