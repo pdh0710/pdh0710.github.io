@@ -151,6 +151,7 @@ var bmk = [
 		[0, "https://forum.xda-developers.com/", "xda developers : android custom rom"]
 	],
 	[	[1, "Torrent", 0, 0],
+		[0, "http://youjamak.com/", "유자막"],
 		[0, "https://bunyuc.com/", "번역 포럼"],
 		[0, "https://jamak.tv/", "자막나라"],
 		[0, "http://www.jamack.net/", "자막넷"],
