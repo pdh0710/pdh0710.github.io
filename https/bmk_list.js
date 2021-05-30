@@ -74,8 +74,6 @@ var bmk = [
 		[-1],
 		[0, "https://lime-worlds.duckdns.org/", "LimeLite Worlds"],
 		[1, "https://lime-worlds.duckdns.org/tosee/", "To See"],
-		[1, "https://lime-worlds.duckdns.org/media", "Media"],
-		[1, "https://lime-worlds.duckdns.org/upload", "Upload"],
 		[0, "https://worlds2see.ddnsfree.com/", "Worlds2See"],
 		[1, "https://worlds2see.ddnsfree.com/limelite/", "limelite"],
 		[1, "https://worlds2see.ddnsfree.com/media", "Media"],
