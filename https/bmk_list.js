@@ -15,8 +15,8 @@ var bmk = [
 		[0, "https://www.coolenjoy.net/bbs/board.php?bo_table=38", "쿨앤 뉴스/신제품"],
 		[-1],
 		[0, "https://quasarzone.com/bbs/qb_saleinfo", "퀘이사존"],
-		[0, "https://www.clien.net/service/board/jirum", "클리앙"],
-		[0, "https://www.coolenjoy.net/bbs/jirum", "쿨앤"]
+		[1, "https://www.clien.net/service/board/jirum", "클리앙"],
+		[1, "https://www.coolenjoy.net/bbs/jirum", "쿨앤"]
 	],
 	[	[1, 'News Archive', 1, 1],
 		[0, "https://www.yna.co.kr/industry/all?site=navi_industry_depth02", "연합뉴스 - 산업 전체기사"],
