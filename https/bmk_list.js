@@ -12,8 +12,11 @@ var bmk = [
 		[0, "https://www.boannews.com/media/list.asp?mkind=1", "보안 뉴스 - Security"],
 		[0, "https://www.itworld.co.kr/main/", "IT World 한국 : 메인"],
 		[0, "https://www.clien.net/service/board/news", "클리앙 새로운 소식"],
-		[0, "https://quasarzone.com/bbs/qb_saleinfo", "퀘이사존 할인정보"],
-		[0, "https://www.coolenjoy.net/bbs/board.php?bo_table=38", "쿨앤조이 뉴스/신제품"],
+		[0, "https://www.coolenjoy.net/bbs/board.php?bo_table=38", "쿨앤 뉴스/신제품"],
+		[-1],
+		[0, "https://quasarzone.com/bbs/qb_saleinfo", "퀘이사존"],
+		[0, "https://www.clien.net/service/board/jirum", "클리앙"],
+		[0, "https://www.coolenjoy.net/bbs/jirum", "쿨앤"]
 	],
 	[	[1, 'News Archive', 1, 1],
 		[0, "https://www.yna.co.kr/industry/all?site=navi_industry_depth02", "연합뉴스 - 산업 전체기사"],
