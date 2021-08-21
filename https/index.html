@@ -91,7 +91,7 @@ BODY {
 .desktop #left #menu .select:hover { color:white;background-color:hsl(220, 70%,	62%); }
 */
 
-#wt	{position:absolute;top:20px;right:20px;width:524px;height:824px;padding:0;margin:0;background-color:transparent;overflow:hidden;z-index:0;}
+#wt	{position:absolute;top:20px;right:20px;width:600px;height:824px;padding:0;margin:0;background-color:transparent;overflow:hidden;z-index:0;}
 
 </STYLE>
 </head>
@@ -114,8 +114,8 @@ BODY {
 
 </div>
 
-<script	type="text/javascript" src="common.js"></script>
-<script	type="text/javascript">
+<script src="common.js"></script>
+<script>
 "use strict";
 
 var	chapter	= [new chap('Bookmark','bm')], // chapter는 위->아래 순서대로 배치된다는	가정 아래 code가	작성되었음
@@ -420,7 +420,7 @@ document.getElementById('vsbar').onmousedown = function	(ev) {
 
 document.getElementById('inner').focus();
 document.getElementById("bm").src =	'bmk.html';
-document.getElementById("wt").src =	'wt.html';
+document.getElementById("wt").src =	'wmap.html';
 
 /*
 document.getElementById('hidden_box').innerHTML = '<iframe	id=wt name=wt src="hidden.html"	frameborder=0 allowtransparency="true" scrolling="no"></iframe>';
