@@ -117,6 +117,8 @@ var bmk = [
 		[0, "https://stellarium-web.org/", "Stellarium Web"],
 		[0, "https://www.weather.go.kr/w/index.do", "기상청 날씨누리"],
 		[0, "https://m.airkorea.or.kr/main", "우리동네 대기정보"],
+		[0, "https://www.jma.go.jp/bosai/map.html#5/31.691/128.826/&elem=ir&contents=himawari&lang=en", "일본기상청 위성영상"],
+		[1, "https://himawari8.nict.go.jp/en/himawari8-image.htm", "Himawari-8 위성영상"],
 		[0, "https://speller.cs.pusan.ac.kr/", "한국어 맞춤법/문법 검사기"],
 		[0, "https://www.gingersoftware.com/grammarcheck", "Ginger Grammar Checker"],
 		[0, "https://www.wolframalpha.com/", "Wolfram|Alpha: Computational Knowledge Engine"],
