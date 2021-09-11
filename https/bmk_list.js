@@ -116,6 +116,7 @@ var bmk = [
 		[1, "https://wiki.openstreetmap.org/wiki/Overpass_API", "Overpass API"],
 		[0, "https://stellarium-web.org/", "Stellarium Web"],
 		[0, "https://www.weather.go.kr/w/index.do", "기상청 날씨누리"],
+		[0, "https://m.airkorea.or.kr/main", "우리동네 대기정보"],
 		[0, "https://speller.cs.pusan.ac.kr/", "한국어 맞춤법/문법 검사기"],
 		[0, "https://www.gingersoftware.com/grammarcheck", "Ginger Grammar Checker"],
 		[0, "https://www.wolframalpha.com/", "Wolfram|Alpha: Computational Knowledge Engine"],
