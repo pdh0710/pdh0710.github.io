@@ -156,7 +156,6 @@ var bmk = [
 		[0, "http://www.voidtools.com/", "voidtools : Everything"],
 		[0, "https://www.chiark.greenend.org.uk/~sgtatham/putty/", "PuTTY"],
 		[1, "https://github.com/iPuTTY/iPuTTY", "한국어 PuTTY"],
-		[1, "https://github.com/iPuTTY/iPuTTY/releases", "releases"],
 		[0, "https://winscp.net/eng/index.php", "WinSCP"],
 		[0, "http://www.uvnc.com/", "UltraVNC VNC Official"],
 		[0, "https://github.com/ValdikSS/GoodbyeDPI", "GoodbyeDPI"],
