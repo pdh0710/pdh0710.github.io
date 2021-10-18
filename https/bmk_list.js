@@ -18,7 +18,7 @@ var bmk = [
 		[1, "https://quasarzone.com/bbs/qn_partner", "파트너"],
 		[-1],
 		[1, "https://www.clien.net/service/board/jirum", "클리앙"],
-		[1, "https://www.coolenjoy.net/bbs/jirum", "쿨앤"]
+		[1, "https://www.coolenjoy.net/bbs/jirum", "쿨앤"],
 		[0, "https://quasarzone.com/bbs/qb_saleinfo", "퀘이사존"]
 	],
 	[	[1, 'News Archive', 1, 1],
