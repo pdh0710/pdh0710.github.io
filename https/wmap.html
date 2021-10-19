@@ -40,10 +40,10 @@ BODY {
 	height:	635px;
 	margin:	0 auto 0px auto;
 }
-#weather {
+#wmap {
 	width: 100%;
 	height:	100%;
-	background:	url(wmap/skorea.png)	no-repeat;
+	background:	url(wmap/skorea.png) no-repeat;
 	background-position: left top;
 	background-size: 100%;
 	padding: 0;
@@ -147,7 +147,7 @@ div[id^=row] {position:relative;overflow:hidden;width:600px;z-index:1;}
 <div id=bg>
 	<div id=row_wth>
 		<div class="nation_map_wrapper">
-			<div id='weather'>
+			<div id='wmap'>
 			</div>
 			<p id="updated-at"></p>
 		</div>
@@ -180,14 +180,25 @@ var url = [
 	'https://www.weather.go.kr/repositary/image/sat/gk2a/EA/gk2a_ami_le1b_ir105_ea020lc_'
 ];
 
+
+function pad0(num, size) {
+	var s = "000000000" + num;
+	return s.substr(s.length-size);
+}
+
+function arr2tm(arr) {
+	return "" + arr[0] + '.' + pad0(arr[1], 2) + '.' + pad0(arr[2], 2) + ' ' + pad0(arr[3], 2) + ':' + pad0(arr[4], 2);
+}
+
 function Wmap() {
-	document.getElementById('updated-at').innerHTML = dataWeatherMap.updated;
+	var wm = dataWeather.wmap;
+	document.getElementById('updated-at').innerHTML = arr2tm(wm.updated);
 	var inner = '';
-	for(var i=0; i<dataWeatherMap.data.length; i++) {
-		var dl = dataWeatherMap.data[i];
+	for(var i=0; i<wm.data.length; i++) {
+		var dl = wm.data[i];
 		inner += '<dl class="'+ dl[1] +'"><dt>'+ dl[0] +'</dt><dd><img src="wmap/'+ dl[3] +'" alt="'+ dl[2] +'">'+ dl[4] +'</dd></dl>';
 	}
-	document.getElementById('weather').innerHTML = inner;
+	document.getElementById('wmap').innerHTML = inner;
 }
 
 function lz2(n) {
@@ -218,7 +229,7 @@ for(var i=0; i<intv.length; i++) {
 	getImage(i);
 }
 
-addScript('https://pdh0710.ddnsfree.com/wmap.js?t=' + (new Date).getTime(), Wmap);
+addScript('https://pdh0710.ddnsfree.com/weather.js?t=' + (new Date).getTime(), Wmap);
 if( location.href == top.location.href )
 	addCSS('bg.css');
 
