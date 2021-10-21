@@ -186,13 +186,14 @@ function pad0(num, size) {
 	return s.substr(s.length-size);
 }
 
-function arr2tm(arr) {
-	return "" + arr[0] + '.' + pad0(arr[1], 2) + '.' + pad0(arr[2], 2) + ' ' + pad0(arr[3], 2) + ':' + pad0(arr[4], 2);
+function ts2tm(ts) {
+	var d = new Date(ts * 1000);
+	return '' + d.getFullYear() + '.' + pad0(d.getMonth()+1, 2) + '.' + pad0(d.getDate(), 2) + ' ' + pad0(d.getHours(), 2) + ':' + pad0(d.getMinutes(), 2);
 }
 
 function Wmap() {
 	var wm = dataWeather.wmap;
-	document.getElementById('updated-at').innerHTML = arr2tm(wm.updated);
+	document.getElementById('updated-at').innerHTML = ts2tm(wm.updated);
 	var inner = '';
 	for(var i=0; i<wm.data.length; i++) {
 		var dl = wm.data[i];
