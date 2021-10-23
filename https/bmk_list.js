@@ -226,6 +226,7 @@ var bmk = [
 		[-1],
 		[0, "https://www.openssh.com/", "OpenSSH"],
 		[-1],
+		[0, "https://www.data.go.kr/index.do", "한국 공공데이터포털"],
 		[0, "https://www.iana.org/time-zones", "IANA Time Zone Database"],
 		[0, "https://www.naturalearthdata.com/", "Natural Earth"],
 		[0, "https://www.geonames.org/", "GeoNames"],
