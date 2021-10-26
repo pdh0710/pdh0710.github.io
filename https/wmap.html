@@ -192,11 +192,10 @@ function ts2tm(ts) {
 }
 
 function Wmap() {
-	var wm = dataWeather.wmap;
-	document.getElementById('updated-at').innerHTML = ts2tm(wm.updated);
+	document.getElementById('updated-at').innerHTML = ts2tm(weatherMap.updated);
 	var inner = '';
-	for(var i=0; i<wm.data.length; i++) {
-		var dl = wm.data[i];
+	for(var i=0; i<weatherMap.data.length; i++) {
+		var dl = weatherMap.data[i];
 		inner += '<dl class="'+ dl[1] +'"><dt>'+ dl[0] +'</dt><dd><img src="wmap/'+ dl[3] +'" alt="'+ dl[2] +'">'+ dl[4] +'</dd></dl>';
 	}
 	document.getElementById('wmap').innerHTML = inner;
@@ -230,7 +229,7 @@ for(var i=0; i<intv.length; i++) {
 	getImage(i);
 }
 
-addScript('https://pdh0710.ddnsfree.com/weather.js?t=' + (new Date).getTime(), Wmap);
+addScript('https://pdh0710.ddnsfree.com/weatherMap.js?t=' + (new Date).getTime(), Wmap);
 if( location.href == top.location.href )
 	addCSS('bg.css');
 
