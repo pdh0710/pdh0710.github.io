@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type"	CONTENT="text/html;	charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<TITLE>Ensemble</TITLE>
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="bg.css">
+<STYLE>
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+HTML {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+BODY {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+#cover { position:fixed;top:0;bottom:0;left:0;right:0; padding:0;margin:0;border:none; background-color:transparent;z-index:-9;	} /* iframe	등이 mouse move event를 가져가는 것을 막는	용도 */
+
+#main {	position:absolute;top:0;bottom:0;left:0;right:-17px; padding:0;margin:0;border:none; background-color:transparent; overflow-x:hidden;overflow-y:scroll;	} /* scrollbar 없이 scroll이 되게 하기	위한 것 https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll */
+#hidden_box	{ position:absolute;top:0;left:0; height:20px;width:20px; border:none; overflow:hidden; visibility:hidden; }
+
+.desktop #inner	{ position:absolute;top:20px;left:0;width:auto;height:auto;	padding:0;margin:0;	background-color:transparent; /* hidden_box를 이용해 scroll	여백을	주기 위한 것	*/
+	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none;
+	-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none; }
+.desktop #inner	#bm	{letter-spacing:0;padding:0;margin:0;width:auto;background-color:transparent;overflow:hidden;}
+
+.desktop #left { position:fixed;top:20px;left:20px;	height:auto;width:auto;	background-color:transparent; padding:0;margin:0; border-radius:5px;overflow:hidden;
+	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none;
+	-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none; } /*	???	left는 sidebar이고	position이 fixed... left가 화면	높이보다 크면	scroll이	잘 되어야 하는데??? */
+.desktop #left #menu { width:auto;height:auto; background-color:transparent;padding:0;margin:0;display:block;
+	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none;
+	-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none; }
+
+.desktop #left #menu div { display:block;text-decoration:none; font-family:Arial;font-weight:bold;font-size:14px;text-align:left;
+	color:white;background-color:#ef6c00; height:25px;width:auto; padding:3px 20px 0 20px;margin:0; }
+.desktop #left #menu span {	display:block;text-decoration:none;white-space:nowrap;cursor:pointer; font-family:Times	New	Roman;font-weight:bold;font-size:14px;text-align:left;
+	height:25px;width:auto;	padding:3px	20px 0 30px;margin:0;	}
+
+.desktop #left #menu .normal { color:white;background-color:hsla(216, 67%, 48%, 0.7); border-bottom:solid 1px hsla(220,	56%, 57%, 0.18); }
+.desktop #left #menu .normal:hover { color:white;background-color:hsla(216,	67%, 65%, 0.7);	border:none; }
+.desktop #left #menu .select { color:white;background-color:hsla(216, 70%, 75%,	0.8); border:none; }
+.desktop #left #menu .select:hover { color:white;background-color:hsl(216, 70%,	75%); }
+
+.desktop #vsbar, .desktop #vsbutton	{ position:fixed;top:20px;left:0; width:15px; border-radius:7px;overflow:hidden;
+	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none;
+	-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none; }
+.desktop #vsbar	{ height:15px;background-color:rgba(160,160,160, 0.38);z-index:10; }
+.desktop #vsbutton { height:auto;background-color:hsla(220, 55%, 35%,0.9);z-index:11; }
+
+.desktop #vsbutton div { position:relative;top:0;left:0; background:url("dot.png") no-repeat 0 0; overflow:hidden; width:15px !important;height:15px !important; background-color:transparent; z-index:10; cursor:pointer;
+	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none;
+	-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none; }
+.desktop #vsbutton .icon_dot_white_small { background-position:0 0;	}
+.desktop #vsbutton .icon_dot_white { background-position:0 -15px; }
+.desktop #vsbutton .icon_dot_red_small { background-position:0 -30px; }
+.desktop #vsbutton .icon_dot_red { background-position:0 -45px;	}
+
+/* light theme 용으로 적당?
+.desktop #left #menu div { display:block;text-decoration:none; font-family:Arial;font-weight:bold;font-size:14px;text-align:left;
+	color:white;background-color:#ef6c00; height:25px;width:auto; padding:3px 20px 0px 20px;margin:0; }
+.desktop #left #menu span {	display:block;text-decoration:none;white-space:nowrap;cursor:pointer; font-family:Times	New	Roman;font-weight:bold;font-size:14px;text-align:left;
+	height:25px;width:auto;	padding:3px	20px 0px 30px;margin:0;	}
+
+.desktop #left #menu .normal { color:hsl(220, 76%, 32%);background-color:rgba(255,255,255,0.9);	border-bottom:solid	1px	rgba(210,210,210,0.9); }
+.desktop #left #menu .normal:hover { color:hsl(220,	56%, 42%);background-color:rgba(255,255,255,1);	border:none; }
+.desktop #left #menu .select { color:white;background-color:hsla(220, 70%, 62%,	0.8); border:none; }
+.desktop #left #menu .select:hover { color:white;background-color:hsl(220, 70%,	62%); }
+*/
+
+#wt	{position:absolute;top:20px;right:20px;width:600px;height:824px;padding:0;margin:0;background-color:transparent;overflow:hidden;z-index:0;}
+
+</STYLE>
+</head>
+<BODY>
+
+<div id=cover></div>
+<div id=main class=desktop>
+
+	<div id=left>
+		<div id=menu></div>
+	</div>
+	<div id=inner tabindex="-1">
+		<iframe	id=bm name=bm src="about:blank"	frameborder=0 allowtransparency="true" scrolling="no"></iframe>
+	</div>
+	<div id=vsbar></div>
+	<div id=vsbutton></div>
+	<div id=hidden_box></div>
+
+	<iframe	id=wt name=wt src="about:blank"	frameborder=0 allowtransparency="true" scrolling="no"></iframe>	<!-- name property를	없애면	target으로 지정이 안 됨 -_-; -->
+
+</div>
+
+<script src="common.js"></script>
+<script>
+"use strict";
+
+var	chapter	= [new chap('Bookmark','bm')], // chapter는 위->아래 순서대로 배치된다는	가정 아래 code가	작성되었음
+	aDot = [], prev	= {chap:-1,	sec:0, dot:-1},	ms = {on:0,	offset:0, drag:0, y:0}, browser = {name:'', version:''},
+	chapMargin = 50, winHeight,	maxSecY, scrHeight,	scrTop,	sbtHeight, sbMax, wtOff	= 0;
+
+function chap(name,	id)	{
+	this.name =	name;
+	this.id	= id;
+	this.section = this.offsetScroll = this.offsetDot =	0;
+}
+
+function frameSet(sec) {
+	if(arguments.length	== 3) {
+		if(wtOff)
+			return;
+		document.getElementById(arguments[0]).style.width =	arguments[1] + 'px';
+		document.getElementById(arguments[0]).style.height = arguments[2] +	'px';
+		return;
+	}
+
+	var	i;
+
+	for(i=0; i<chapter.length; i++)	{
+		if(chapter[i].name == sec[0].name) {
+			chapter[i].section = sec;
+			document.getElementById(chapter[i].id).style.width = sec[0].width +	'px';
+			document.getElementById(chapter[i].id).style.height	= sec[0].height	+ 'px';
+			break;
+		}
+	}
+	scrTop = document.getElementById('main').scrollTop;
+	makeMenu();
+	for(i=0; i<chapter.length; i++)
+		chapter[i].offsetScroll	= document.getElementById(chapter[i].id).getBoundingClientRect().top + scrTop; // 여기서는 window가 scroll하지	않고 main만 scroll하므로,	window.pageYOffset는	항상 '0'
+	makeDot();
+	scroll();
+}
+
+function makeMenu()	{
+	var	ctt	= "";
+	for(var	i=0,sec,j; i<chapter.length; i++) {
+		if(!chapter[i].section)
+			continue;
+		sec	= chapter[i].section;
+		ctt	+= '<div>' + sec[0].name + '</div>';
+		for(j=1; j<sec.length; j++)
+			ctt	+= '<span id=li'+i+'_'+j+' class=normal	onclick="sec2scroll('+i+','+j+')">'+sec[j].name+'</span>';
+
+	}
+	document.getElementById('menu').innerHTML =	ctt;
+	document.getElementById('inner').style.left	= (document.getElementById('left').getBoundingClientRect().right + 1.5*elementMargin) +	'px';
+	prev.chap =	-1;
+	prev.sec = 0;
+}
+
+function hiddenBox() {
+	scrHeight =	Math.max( document.getElementById('inner').scrollHeight+elementMargin, maxSecY+winHeight-elementMargin );
+	document.getElementById('hidden_box').style.top	= scrHeight	+ 'px';
+	scrHeight += elementMargin;
+}
+
+function scrBar() {
+	document.getElementById('vsbar').style.left	= document.getElementById('vsbutton').style.left = (document.getElementById('inner').getBoundingClientRect().right + 1.5*elementMargin)	+ 'px';
+	sbtHeight =	document.getElementById('vsbutton').offsetHeight;
+	sbMax =	winHeight -	2*elementMargin;
+	document.getElementById('vsbar').style.height =	sbMax +	'px';
+	sbMax -= sbtHeight;
+}
+
+function strDot(idx, isSmall) {
+	return '<div id=icd' + idx + ' onclick="dot2scroll(' + idx + ')" class=icon_dot_white' + (isSmall?'_small':'') + '></div>';
+}
+
+function makeDot() {	// if win resized &	frameSet
+	var	ctt='';
+
+	aDot = [];
+	for(var	i=0, j,	sec; ; i++)	{
+		chapter[i].offsetDot = aDot.length;
+		sec	= chapter[i].section;
+		for(j=1; ; j++)	{
+			aDot[aDot.length] =	chapter[i].offsetScroll	+ sec[j].y - elementMargin;
+			ctt	+= strDot(aDot.length-1, false);
+			if(	(j+1) == sec.length	)
+				break;
+			aDot[aDot.length] =	aDot[aDot.length-1]	+ (sec[j+1].y-sec[j].y)/2;
+			ctt	+= strDot(aDot.length-1, true);
+		}
+		if(	(i+1) == chapter.length	)
+			break;
+		aDot[aDot.length] =	aDot[aDot.length-1]	+ (chapter[i+1].offsetScroll-sec[j].y)/2;
+		ctt	+= strDot(aDot.length-1, true);
+	}
+	maxSecY	= aDot[aDot.length-1];
+
+	hiddenBox();
+
+	// last	small_dot을 "어떤 조건에서	그리고	어느 위치 기준으로 만드나는	선택의	문제.
+	// bookmark	등 여기 목적에서는 section.Height이 보통은 화면 크기에 비해 작거나 많이	크지 않다는 점을 고려해서,	last section이 "화면을 넘어가면, 즉 화면보다	크면"	만드는	것으로	선택
+	j =	scrHeight -	winHeight -	aDot[aDot.length-1];
+	if(j > 0) {
+		aDot[aDot.length] =	aDot[aDot.length-1]	+ j/2;
+		ctt	+= strDot(aDot.length-1, true);
+	}
+	document.getElementById('vsbutton').innerHTML =	ctt;
+	prev.dot = -1;
+
+	scrBar();
+}
+
+function chgCurrSec(chap, sec) {
+	if(prev.chap==chap && prev.sec==sec)
+		return;
+	if(prev.chap >=	0)
+		document.getElementById('li'+prev.chap+'_'+prev.sec).className = 'normal';
+	document.getElementById('li'+chap+'_'+sec).className = 'select';
+	prev.chap =	chap;
+	prev.sec = sec;
+}
+
+function chgCurrDot(idx) {
+	var	t;
+
+	if(prev.dot	== idx)
+		return;
+	if(prev.dot	>= 0) {
+		t =	prev.dot % 2;
+		if(t)
+			document.getElementById('icd'+prev.dot).className =	'icon_dot_white_small';
+		prev.dot -=	t;
+		if(idx == prev.dot)
+			return;
+		document.getElementById('icd'+prev.dot).className =	'icon_dot_white';
+	}
+	prev.dot = idx;
+	t =	idx	% 2;
+	if(t)
+		document.getElementById('icd'+idx).className = 'icon_dot_red_small';
+	idx	-= t;
+	document.getElementById('icd'+idx).className = 'icon_dot_red';
+}
+
+function dot2scroll(idx) {
+	if(ms.on &&	msClear())
+		return;
+
+	scrTop = document.getElementById('main').scrollTop = aDot[idx];
+	if(	!(idx%2) ) {
+		idx	= dot2chapNsec(idx);
+		document.getElementById(chapter[idx.chap].id).contentWindow.head4p(chapter[idx.chap].section[idx.sec].idx);
+	}
+}
+
+
+function sec2scroll(chap, sec) {
+	scrTop = document.getElementById('main').scrollTop = aDot[ (chapter[chap].offsetDot	+ sec -	1)*2 ];
+	document.getElementById(chapter[chap].id).contentWindow.head4p(chapter[chap].section[sec].idx);
+}
+
+function dot2chapNsec(idx) {
+	var	i;
+	for(i=0; i<chapter.length; i++)	{
+		if(chapter[i].offsetDot	> idx)
+			break;
+	}
+	idx	= parseInt(	(idx-chapter[--i].offsetDot) / 2 ) + 1;
+	return {chap:i,	sec:idx};
+}
+
+/*
+y =	a*x	+ b;
+
+case1: y = scrTop ,	x =	ms.y
+
+	x1=0, x2=sbMax
+	y1=0, y2= scrHeight	- winHeight
+
+	b =	0
+	a =	(scrHeight - winHeight)	/ sbMax
+
+	scrTop = ms.y *	(scrHeight - winHeight)	/ sbMax
+
+cas2: y	= sbTop[-elementMargin]	, x	= scrTop
+
+	x1 = 0,	x2 = scrHeight - winHeight
+	y1 = 0,	y2 = sbMax
+
+	b =	0
+	a =	sbMax /	(scrHeight - winHeight)
+
+	sbTop =	scrTop*sbMax / (scrHeight -	winHeight) [+elementMargin]
+*/
+
+function y2scrTop(y) {
+	y =	Math.max( Math.min(y-elementMargin,	sbMax) , 0 );
+	document.getElementById('main').scrollTop =	scrTop = y * (scrHeight	- winHeight) / sbMax;
+}
+
+function scr2sbt(scr) {
+	document.getElementById('vsbutton').style.top =	( scr *	sbMax /	(scrHeight - winHeight)	+ elementMargin	) +	'px';
+}
+
+function scroll() {	// scroll 되었을 때	현재 위치에 해당하는	menu 항목과 scrollnav 항목 표시
+	if(!aDot.length)
+		return;
+
+	scr2sbt(scrTop);
+
+	var	idx;
+
+	for(idx=0; idx<aDot.length;	idx++) {
+		if(aDot[idx] > scrTop)
+			break;
+	}
+	idx--;
+	chgCurrDot(idx);
+
+	idx	= dot2chapNsec(idx);
+	chgCurrSec(idx.chap, idx.sec);
+
+}
+
+function resizeEvent() {
+	if(document.documentElement.clientWidth	<1460) {
+		wtOff =	1;
+		document.getElementById('wt').style.display	= 'none';
+	}
+	else if(wtOff) {
+		wtOff =	0;
+		document.getElementById('wt').style.display	= 'block';
+		document.getElementById('wt').contentWindow.location.reload();
+	}
+
+	winHeight =	document.documentElement.clientHeight;
+
+	if(!aDot.length)
+		return;
+	makeDot();
+	scroll();
+}
+
+function msClear() {	// return 1	if dragged
+	window.onmouseup = window.onmousemove =	null;
+	ms.on =	0;
+	if(ms.drag)	{
+		ms.drag	= 0;
+		document.getElementById("cover").style.zIndex =	"-9";
+		return 1;
+	}
+	return 0;
+}
+
+function msDownEvent(ev) {
+	ms.offset =	ev.pageY - document.getElementById('vsbutton').getBoundingClientRect().top;
+	ms.y = ev.pageY;
+	ms.drag	= 0;
+	ms.on =	1;
+	window.onmousemove = function (ev) {
+		if(	!(ev.buttons & 1)) {
+			msClear();
+			return;
+		}
+		if(	!ms.drag &&	Math.abs(ev.pageY-ms.y)	> 8	) {
+			ms.drag	= 1;
+			document.getElementById("cover").style.zIndex =	"9";
+		}
+		if(ms.drag)
+			y2scrTop(ev.pageY -	ms.offset);
+	};
+	window.onmouseup = function	(ev) {
+		if(!ev.target.id.search('icd'))
+			return;
+		msClear();
+	};
+}
+
+// move	scrollbar :	mousemove event	tracking 방법	밖에 없는 듯	-_-;
+// 사용 가능한 mouse	position property :	https://www.quirksmode.org/mobile/tableViewport_desktop.html
+//			pageX/Y	uses the same coordinate system	as position: absolute. This	is usually what	you	want.
+//			clientX/Y =	pageX/Y	- window.pageX/YOffset
+// 사용예 ; https://stackoverflow.com/questions/7790725/javascript-track-mouse-position
+// onmousedown trigger -> onclick/onmouseup	exit
+
+// init
+
+
+window.onresize	= resizeEvent;
+resizeEvent();
+
+document.getElementById('main').onscroll = function	(ev) {
+	scrTop = document.getElementById('main').scrollTop;
+	scroll();
+};
+
+document.getElementById('vsbutton').onmousedown	= msDownEvent;
+document.getElementById('vsbar').onmousedown = function	(ev) {
+	y2scrTop(ev.pageY -	7);
+	scr2sbt(scrTop);
+	msDownEvent(ev);
+};
+
+document.getElementById('inner').focus();
+document.getElementById("bm").src =	'bmk.html';
+document.getElementById("wt").src =	'wmap.html';
+
+/*
+document.getElementById('hidden_box').innerHTML = '<iframe	id=wt name=wt src="hidden.html"	frameborder=0 allowtransparency="true" scrolling="no"></iframe>';
+
+function detectedBrowser(name, version) {
+	browser.name = name;
+	browser.version = version;
+	document.getElementById('hidden_box').innerHTML = '';
+}
+
+function msWheel(ev) {
+	var ratio;
+
+	if(browser.name.search(/internet explorer/i) >= 0) {
+		return;
+	}
+	if(browser.name.search(/firefox/i) >= 0)
+		ratio = 36;
+	else
+		ratio = 1;
+
+	document.getElementById('main').scrollTop += ev.deltaY * ratio;
+}
+
+
+// wheel event transfer test : failed
+
+(function(window,document) {
+
+	var	prefix = "", _addEventListener,	support;
+
+	// detect event	model
+	if ( window.addEventListener ) {
+		_addEventListener =	"addEventListener";
+	} else {
+		_addEventListener =	"attachEvent";
+		prefix = "on";
+	}
+
+	// detect available	wheel event
+	support	= "onwheel"	in document.createElement("div") ? "wheel" : //	Modern browsers	support	"wheel"
+			  document.onmousewheel	!==	undefined ?	"mousewheel" : // Webkit and IE	support	at least "mousewheel"
+			  "DOMMouseScroll";	// let's assume	that remaining browsers	are	older Firefox
+
+	window.addWheelListener	= function(	elem, callback,	useCapture ) {
+		_addWheelListener( elem, support, callback,	useCapture );
+
+		// handle MozMousePixelScroll in older Firefox
+		if(	support	== "DOMMouseScroll"	) {
+			_addWheelListener( elem, "MozMousePixelScroll",	callback, useCapture );
+		}
+	};
+
+	function _addWheelListener(	elem, eventName, callback, useCapture )	{
+		elem[ _addEventListener	]( prefix +	eventName, support == "wheel" ?	callback : function( originalEvent ) {
+			!originalEvent && (	originalEvent =	window.event );
+
+			// create a	normalized event object
+			var	event =	{
+				// keep	a ref to the original event	object
+				originalEvent: originalEvent,
+				target:	originalEvent.target ||	originalEvent.srcElement,
+				type: "wheel",
+				deltaMode: originalEvent.type == "MozMousePixelScroll" ? 0 : 1,
+				deltaX:	0,
+				deltaY:	0,
+				deltaZ:	0,
+				preventDefault:	function() {
+					originalEvent.preventDefault ?
+						originalEvent.preventDefault() :
+						originalEvent.returnValue =	false;
+				}
+			};
+
+			// calculate deltaY	(and deltaX) according to the event
+			if ( support ==	"mousewheel" ) {
+				event.deltaY = -originalEvent.wheelDelta;
+				// Webkit also support wheelDeltaX
+				originalEvent.wheelDeltaX && ( event.deltaX	= -originalEvent.wheelDeltaX );
+			} else {
+				event.deltaY = originalEvent.deltaY	|| originalEvent.detail;
+			}
+
+			// it's	time to	fire the callback
+			return callback( event );
+
+		}, useCapture || false );
+	}
+
+})(window,document);
+
+addWheelListener( document.getElementById('vsbar'),	msWheel);
+addWheelListener( document.getElementById('vsbutton'),	msWheel);
+addWheelListener( document.getElementById('left'),	msWheel);
+
+
+
+/* 안됨. 대신 https://developer.mozilla.org/en-US/docs/Web/Events/wheel
+  scrollableDiv.scrollTop += ev.deltaY;
+
+document.getElementById('vsbar').onscroll =	function(ev) {
+	document.getElementById('main').dispatchEvent(ev);
+}
+
+
+/*
+#hidden_box	{ position:absolute;top:0;left:200px; height:20px;width:20px; border:none; background-color:yellow;	}
+
+#ttest { position:fixed;left:0;top:0; width:auto;height:auto; font-size:12px; color:white;background-color:#505050;	margin:0;padding:2px; }
+#ttest2	{ position:fixed;right:0;top:0;	width:auto;height:auto;	font-size:12px;	color:white;background-color:#505050; margin:0;padding:2px;	}
+
+<div id=ttest>ttest</div>
+<div id=ttest2>ttest2</div>
+
+var	tempCounter	= 0;
+document.getElementById('ttest').innerHTML = tempCounter++;
+
+document.getElementById('ttest').innerHTML = 'cliH='+winHeight+', innH='+document.getElementById('inner').scrollHeight+', maxSecY='+maxSecY+', scrTop='+document.getElementById('main').scrollTop+', winOffY='+window.pageYOffset+', chapter_last.offsetScroll='+chapter[chapter.length-1].offsetScroll+', chapter_last.top='+document.getElementById(chapter[chapter.length-1].id).getBoundingClientRect().top;
+document.getElementById('ttest2').innerHTML	= '[onScroll] cliH='+winHeight+', scrTop='+document.getElementById('main').scrollTop+',	innH='+document.getElementById('inner').scrollHeight;
+
+*/
+</script>
+</BODY>
+</html>
