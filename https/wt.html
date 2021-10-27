@@ -33,26 +33,48 @@ BODY {
 	background-color: transparent;
 }
 
-.curr_weather_wrapper	{
+.curr_weather_wrapper {
 	position: relative;
-	background:	radial-gradient(#fff, #6eaada);
+	background-color:hsla(220, 56%, 52%, 0.7);
+	color:white;
+	font-size: 12px;
 	width: 600px;
 	height:	350px;
 	margin:	0 auto 0px auto;
+	cursor:pointer;
+}
+.curr_weather_wrapper .bgpng {
+	border-radius: 27%;
+	background-color: #eee;
 }
 #curr {
 	width: 100%;
 	height:	100%;
-	color:black;
 	background:	transparent;
-	padding: 0;
+	padding: 40px 10px 10px 10px;
 }
+#curr-location {
+	position: absolute;
+	left: 10px;
+	top:	10px;
+	font-weight: bold;
+	font-size: 15px;
+}
+#curr-updated {
+	position: absolute;
+	right: 10px;
+	top:	10px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
 .nation_map_wrapper	{
 	position: relative;
 	background:	radial-gradient(#fff, #6eaada);
 	width: 600px;
 	height:	635px;
 	margin:	0 auto 0px auto;
+	cursor:pointer;
 }
 #wmap {
 	width: 100%;
@@ -62,7 +84,15 @@ BODY {
 	background-size: 100%;
 	padding: 0;
 }
-dl {
+#map-updated {
+	position: absolute;
+	right: 10px;
+	bottom:	10px;
+	color: black;
+	font-weight: bold;
+	font-size: 12px;
+}
+.nation_map_wrapper	dl {
 	display: block;
 	font-family: sans-serif;
 	font-size: 12px;
@@ -71,11 +101,11 @@ dl {
 	height:	auto;
 	width: 43px;
 	border:	1px	solid #cdcdcd;
-	border-radius: 5px;
+	border-radius: 10%;
 	background:	#fff;
 	padding: 2px 1px;
 }
-dd img	{
+.nation_map_wrapper	dd img	{
 	display: block;
 	margin: auto;
 	width: 100%;
@@ -83,7 +113,7 @@ dd img	{
 	height:	auto;
 	text-align:	center;
 }
-dd {
+.nation_map_wrapper	dd {
 	display: block;
 	margin: auto;
 	letter-spacing:	1px;
@@ -91,7 +121,7 @@ dd {
 	color: rgb(204,	0, 0);
 	font-weight: bold;
 }
-.unit {
+.nation_map_wrapper	.unit {
 	position: absolute;
 	right: 10px;
 	bottom:	30px;
@@ -99,38 +129,30 @@ dd {
 	font-weight: bold;
 	font-size: 11px;
 }
-.updated-at	{
-	position: absolute;
-	right: 10px;
-	bottom:	10px;
-	color: black;
-	font-weight: bold;
-	font-size: 12px;
-}
-.po_108{position:absolute;left:215px;top:75px;}	  /* 서울 */
-.po_99 {position:absolute;left:175px;top:29px;}	  /* 파주 */
-.po_112{position:absolute;left:167px;top:90px;}	  /* 인천 */
-.po_119{position:absolute;left:212px;top:143px;}  /* 수원 */
-.po_177{position:absolute;left:165px;top:180px;}  /* 홍성 */
-.po_131{position:absolute;left:259px;top:185px;}  /* 청주 */
-.po_133{position:absolute;left:255px;top:243px;}  /* 대전 */
-.po_146{position:absolute;left:217px;top:292px;}  /* 전주 */
-.po_156{position:absolute;left:193px;top:350px;}  /* 광주 */
-.po_165{position:absolute;left:151px;top:387px;}  /* 목포 */
-.po_168{position:absolute;left:267px;top:385px;}  /* 여수 */
-.po_136{position:absolute;left:355px;top:220px;}  /* 안동 */
-.po_143{position:absolute;left:345px;top:281px;}  /* 대구 */
-.po_138{position:absolute;left:440px;top:253px;}  /* 포항 */
-.po_152{position:absolute;left:437px;top:319px; display:none;}  /* 울산 */
-.po_159{position:absolute;left:396px;top:354px;}  /* 부산 */
-.po_155{position:absolute;left:345px;top:353px;}  /* 창원 */
-.po_101{position:absolute;left:273px;top:27px;}	  /* 춘천 */
-.po_104{position:absolute;left:368px;top:60px;}	  /* 강릉 */
-.po_90 {position:absolute;left:347px;top:1px;}	  /* 속초 */
-.po_102{position:absolute;left:5px;	 top:15px;}	  /* 백령도 */
-.po_169{position:absolute;left:57px	;top:380px;}  /* 흑산도 */
-.po_115{position:absolute;left:551px;top:53px;}	  /* 울릉도,독도 */
-.po_184{position:absolute;left:168px;top:542px;}  /* 제주 */
+.nation_map_wrapper	.po_108{position:absolute;left:215px;top:75px;}	  /* 서울 */
+.nation_map_wrapper	.po_99 {position:absolute;left:175px;top:29px;}	  /* 파주 */
+.nation_map_wrapper	.po_112{position:absolute;left:167px;top:90px;}	  /* 인천 */
+.nation_map_wrapper	.po_119{position:absolute;left:212px;top:143px;}  /* 수원 */
+.nation_map_wrapper	.po_177{position:absolute;left:165px;top:180px;}  /* 홍성 */
+.nation_map_wrapper	.po_131{position:absolute;left:259px;top:185px;}  /* 청주 */
+.nation_map_wrapper	.po_133{position:absolute;left:255px;top:243px;}  /* 대전 */
+.nation_map_wrapper	.po_146{position:absolute;left:217px;top:292px;}  /* 전주 */
+.nation_map_wrapper	.po_156{position:absolute;left:193px;top:350px;}  /* 광주 */
+.nation_map_wrapper	.po_165{position:absolute;left:151px;top:387px;}  /* 목포 */
+.nation_map_wrapper	.po_168{position:absolute;left:267px;top:385px;}  /* 여수 */
+.nation_map_wrapper	.po_136{position:absolute;left:355px;top:220px;}  /* 안동 */
+.nation_map_wrapper	.po_143{position:absolute;left:345px;top:281px;}  /* 대구 */
+.nation_map_wrapper	.po_138{position:absolute;left:440px;top:253px;}  /* 포항 */
+.nation_map_wrapper	.po_152{position:absolute;left:437px;top:319px; display:none;}  /* 울산 */
+.nation_map_wrapper	.po_159{position:absolute;left:396px;top:354px;}  /* 부산 */
+.nation_map_wrapper	.po_155{position:absolute;left:345px;top:353px;}  /* 창원 */
+.nation_map_wrapper	.po_101{position:absolute;left:273px;top:27px;}	  /* 춘천 */
+.nation_map_wrapper	.po_104{position:absolute;left:368px;top:60px;}	  /* 강릉 */
+.nation_map_wrapper	.po_90 {position:absolute;left:347px;top:1px;}	  /* 속초 */
+.nation_map_wrapper	.po_102{position:absolute;left:5px;	 top:15px;}	  /* 백령도 */
+.nation_map_wrapper	.po_169{position:absolute;left:57px	;top:380px;}  /* 흑산도 */
+.nation_map_wrapper	.po_115{position:absolute;left:551px;top:53px;}	  /* 울릉도,독도 */
+.nation_map_wrapper	.po_184{position:absolute;left:168px;top:542px;}  /* 제주 */
 
 #bg {position:absolute;width:auto;height:auto;margin:0;padding:0;background-color:transparent;border-radius:5px 5px 0 0;overflow:hidden;}
 
@@ -139,9 +161,9 @@ dd {
 div[id^=row] {position:relative;overflow:hidden;width:600px;z-index:1;}
 
 #row_wth {height:985px;padding:0;margin:0;}
-#row_wth .cover {left:0;top:0;width:600px;height:635px;}
+/* #row_wth .cover {left:0;top:0;width:600px;height:635px;} */
 
-#row_foot {height:32px;color:#f9a825;background-color:hsla(220, 56%, 52%, 0.7);padding:10px 10px 0 10px;font-family:굴림;font-size:12px;text-align:left;vertical-align:top;border-radius:0 0 5px 5px;}
+#row_foot {height:32px;color:#f9b828;background-color:hsla(220, 56%, 52%, 0.7);padding:10px 10px 0 10px;font-family:굴림;font-size:12px;text-align:left;vertical-align:top;border-radius:0 0 5px 5px;}
 #row_foot A {font-family:inherit;font-size:inherit;font-weight:bold;line-height:inherit;letter-spacing:inherit;color:#fff;text-decoration:none;padding:0 5px 0 5px;}
 #row_foot A:hover {color:black;background-color:white;}
 
@@ -160,17 +182,18 @@ div[id^=row] {position:relative;overflow:hidden;width:600px;z-index:1;}
 
 <div id=bg>
 	<div id=row_wth>
-		<div class="curr_weather_wrapper">
+		<div class="curr_weather_wrapper" onclick='window.open("https://www.weather.go.kr/w/index.do", "_blank");'>
 			<div id='curr'>
 			</div>
-			<p id="curr-updated" class="updated-at"></p>
+			<p id="curr-location"></p>
+			<p id="curr-updated"></p>
 		</div>
-		<div class="nation_map_wrapper">
+		<div class="nation_map_wrapper" onclick='window.open("https://www.weather.go.kr/w/obs-climate/land/city-obs.do", "_blank");'>
 			<div id='wmap'>
 			</div>
-			<p id="map-updated" class="updated-at"></p>
+			<p id="map-updated"></p>
 		</div>
-		<div class=cover onclick='window.open("https://www.weather.go.kr/w/index.do", "_blank");'></div>
+		<!-- <div class=cover onclick='window.open("https://www.weather.go.kr/w/index.do", "_blank");'></div> -->
 	</div>
 	<div id=row_foot>
 		&bull; 날씨정보 :<a href="https://www.weather.go.kr/w/index.do" target=_blank>한국기상청</a> &nbsp; &bull; WindMap :<a href="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-225.12,28.82" target=_blank>nullschool</a>,<a href="https://www.weather.go.kr/weather/home/earth/index.jsp" target=_blank>기상청</a>
@@ -200,27 +223,17 @@ var url = [
 ];
 
 
-function pad0(num, size) {
-	var s = "000000000" + num;
-	return s.substr(s.length-size);
-}
-
-function ts2tm(ts) {
-	var d = new Date(ts * 60000);
-	return '' + d.getFullYear() + '.' + pad0(d.getMonth()+1, 2) + '.' + pad0(d.getDate(), 2) + ' ' + pad0(d.getHours(), 2) + ':' + pad0(d.getMinutes(), 2);
-}
-
 function lz2(n) {
 	return ('000' + n).slice(-2);
 }
 
-function tm2str(idx) {
+function ts2str(idx) {
 	var d = new Date( tm[idx] * intv[idx] );
 	return (((('' + d.getUTCFullYear()) + lz2(d.getUTCMonth()+1)) + lz2(d.getUTCDate())) + lz2(d.getUTCHours())) + lz2(d.getUTCMinutes());
 }
 
 function getImage(idx) {
-	var img = new Image(), src = url[idx] + tm2str(idx) + postfix;
+	var img = new Image(), src = url[idx] + ts2str(idx) + postfix;
 	img.onload = function () {
 		var e = document.getElementById('sat'+idx);
 		e.src = src;
@@ -233,24 +246,40 @@ function getImage(idx) {
 	img.src = src;
 }
 
-function name2url(n) {
-	return 'https://pdh0710.ddnsfree.com/weather' + n + '.js?t=' + (new Date).getTime()
+function tm2str(ts) {
+	var d = new Date(ts * 60000);
+	return '' + d.getFullYear() + '.' + lz2(d.getMonth()+1) + '.' + lz2(d.getDate()) + ' ' + lz2(d.getHours()) + ':' + lz2(d.getMinutes()) + ' 현재';
 }
 
 function Wcurr() {
-	document.getElementById('curr-updated').innerHTML = ts2tm(weatherCurrent.updated);
-	var inner = weatherCurrent.toString();
+	document.getElementById('curr-location').innerHTML = weatherCurrent.location;
+	document.getElementById('curr-updated').innerHTML = tm2str(weatherCurrent.updated);
+	var o = weatherCurrent.sky;
+	var inner = '<img class="bgpng" src="wmap/'+ o[1] +'" alt="'+ o[0] +'"><br /><br />'
+	o = weatherCurrent.current;
+	inner += '현재 : 기온 = ' + o[0] + ' ' + o[1] + '<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 습도 = ' + o[2] + ', 바람 = ' + o[3] + ', 1시간 강수량 = ' + o[4] + '<br /><br />'
+	o = weatherCurrent.minmax;
+	inner += '실황 최저 = ' + o[0] + ', 최고 = ' + o[1] + ' ... 예보 최저 = ' + o[2] + ', 최고 = ' + o[3] + '<br /><br />'
+	o = weatherCurrent.air;
+	inner += '공기질 : ' + o[0] + ', ' + o[1] + ', ' + o[2] + '<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ' + o[3] + '<br /><br />' 
+	for (var [key, value] of Object.entries(weatherCurrent)) {
+		inner += key + ' = "' + value + '"' + ' ..... '
+	}
 	document.getElementById('curr').innerHTML = inner;
 }
 
 function Wmap() {
-	document.getElementById('map-updated').innerHTML = ts2tm(weatherMap.updated);
+	document.getElementById('map-updated').innerHTML = tm2str(weatherMap.updated);
 	var inner = '';
 	for(var i=0; i<weatherMap.data.length; i++) {
 		var dl = weatherMap.data[i];
 		inner += '<dl class="'+ dl[1] +'"><dt>'+ dl[0] +'</dt><dd><img src="wmap/'+ dl[3] +'" alt="'+ dl[2] +'">'+ dl[4] +'</dd></dl>';
 	}
 	document.getElementById('wmap').innerHTML = inner;
+}
+
+function name2url(n) {
+	return 'https://pdh0710.ddnsfree.com/weather' + n + '.js?t=' + (new Date).getTime();
 }
 
 for(var i=1; i<intv.length; i+=2) {
