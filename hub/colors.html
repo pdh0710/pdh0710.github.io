@@ -1,0 +1,547 @@
+<HTML><HEAD><TITLE>Color Bars</TITLE></HEAD>
+<BODY bgcolor=white>
+<TABLE cellSpacing=0 cellPadding=0 align=center border=0>
+<TBODY>
+
+<script language="JavaScript">
+
+function ito16(i)
+{
+    switch(i) {
+        case 15 :
+            return 'f';
+        case 14 :
+            return 'e';
+        case 13 :
+            return 'd';
+        case 12 :
+            return 'c';
+        case 11 :
+            return 'b';
+        case 10 :
+            return 'a';
+    }
+    return i.toString();
+}
+
+function itoh(i)
+{
+    if(i > 255)
+        return 'ff';
+    if(i < 0)
+        return '00';
+    return ito16(Math.floor(i/16)) + ito16(i%16);
+}
+
+
+var i, j;
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TH height=40 width=50>'+j+'</TH>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++)
+    document.writeln('<TD bgColor=#ffffff height=200 width=50>&nbsp;</TD>');
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+j+j+' height=400 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++)
+    document.writeln('<TD bgColor=#ffffff height=200 width=50>&nbsp;</TD>');
+document.writeln('</TR>');
+
+
+
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'0000 height=80 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#00'+j+'00 height=80 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#0000'+j+' height=80 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#00'+j+j+' height=80 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'00'+j+' height=80 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+j+'00 height=80 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++)
+    document.writeln('<TD bgColor=#ffffff height=400 width=50>&nbsp;</TD>');
+document.writeln('</TR>');
+
+
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TH height=40 width=50>'+j+'</TH>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#40'+j+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'40'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+j+'40 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'4040 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#40'+j+'40 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#4040'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#80'+j+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'80'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+j+'80 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'8080 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#80'+j+'80 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#8080'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#c0'+j+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'c0'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+j+'c0 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'c0c0 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#c0'+j+'c0 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#c0c0'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#ff'+j+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'ff'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+j+'ff height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'ffff height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#ff'+j+'ff height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#ffff'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+
+/**/
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TH height=40 width=50>'+j+'</TH>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'0000 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'1000 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'0010 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'1010 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#00'+j+'00 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#10'+j+'00 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#00'+j+'10 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#10'+j+'10 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#0000'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#1000'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#0010'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#1010'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#00'+j+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#10'+j+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'00'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'10'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+j+'00 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+j+'10 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+
+
+/**/
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TH height=40 width=50>'+j+'</TH>');
+}
+document.writeln('</TR>');
+
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#ff'+j+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#f8'+j+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'ff'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'f8'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+j+'ff height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+j+'f8 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'ffff height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'f8ff height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'fff8 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+'f8f8 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#ff'+j+'ff height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#f8'+j+'ff height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#ff'+j+'f8 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#f8'+j+'f8 height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#ffff'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#f8ff'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#fff8'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#f8f8'+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+
+
+/**/
+
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TH height=40 width=50>'+j+'</TH>');
+}
+document.writeln('</TR>');
+
+/*
+document.writeln('<TR>');
+for(i=0; i<=32; i++) {
+    j = itoh(i*8);
+    document.writeln('<TD bgColor=#'+j+j+j+' height=40 width=50>&nbsp;</TD>');
+}
+document.writeln('</TR>');
+*/
+
+</script>
+
+</TBODY></TABLE>
+</BODY>
+</HTML>
