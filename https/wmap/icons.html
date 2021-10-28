@@ -16,6 +16,16 @@
 *:focus	{
 	outline: none;
 }
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, div, figure, article, header, nav, footer, section, aside {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    word-wrap: break-word;
+    white-space: normal;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
 HTML {
 	font-size: 100%;
 	margin:	0;
@@ -40,17 +50,6 @@ body, table, th, td {
     line-height: 1.25;
     letter-spacing: -0.02em;
 }
-body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, div, figure, article, header, nav, footer, section, aside {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    word-break: keep-all;
-    word-wrap: break-word;
-    white-space: normal;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-}
-
 table {
     border-collapse: separate;
     border-spacing: 0;
@@ -70,18 +69,15 @@ table {
 .table-col td {
     font-size: 100%;
     padding: 5px;
-}
-.table-col th, .table-col td {
-    padding: 15px 5px;
-    text-align: center;
-}
-.table-col td {
     border-bottom: 1px solid #e0e6ef;
     border-left: 1px solid #e0e6ef;
     font-size: 17px;
     padding: 0 13px;
 }
-
+.table-col th, .table-col td {
+    padding: 15px 5px;
+    text-align: center;
+}
 .buoy_wind {
     width: 50%;
 }
