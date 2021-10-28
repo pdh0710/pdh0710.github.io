@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<TITLE>Weather Icons</TITLE>
+<style>
+*,
+*::before,
+*::after {
+	margin:	0;
+	padding: 0;
+	-webkit-box-sizing:	border-box;
+	box-sizing:	border-box;
+}
+*:focus	{
+	outline: none;
+}
+HTML {
+	font-size: 100%;
+	margin:	0;
+	padding: 0;
+	width: 100%;
+	height:	100%;
+}
+BODY {
+	margin:	0;
+	padding: 0;
+	width: 100%;
+	height:	100%;
+	color: black;
+	background-color:#f5fffc;
+}
+
+body, input, textarea, select, button, table, th, td {
+    font-family: 'ns', sans-serif;
+    font-size: 100%x;
+    color: #000000;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, div, figure, article, header, nav, footer, section, aside {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    word-wrap: break-word;
+    white-space: normal;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+	max-width:900px;
+	margin: 0 auto;
+	border-top: solid 2px #555;
+	border-bottom: solid 2px#555;
+}
+.table-col td:first-of-type {
+    border-left: 0;
+}
+.table-col thead td{
+	border-bottom: solid 1px #555;
+	height: 50px;
+	font-weight: bold;
+}
+.table-col td {
+    font-size: 100%;
+    padding: 5px;
+}
+.table-col th, .table-col td {
+    padding: 15px 5px;
+    text-align: center;
+}
+.table-col td {
+    border-bottom: 1px solid #e0e6ef;
+    border-left: 1px solid #e0e6ef;
+    font-size: 17px;
+    padding: 0 13px;
+}
+
+.buoy_wind {
+    width: 50%;
+}
+
+.table-col .ic_img {
+    height: auto;
+    width: auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+img, fieldset, iframe {
+    border: 0;
+    vertical-align: top;
+}
+
+[class*="hide-"] {
+    font-size: xx-small;
+    overflow: hidden;
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    text-indent: -1px;
+    margin-top: -1px;
+}
+</style>
+</head>
+<body>
+	<h2>&nbsp;</h2>
+	<table class="table-col">
+		<caption class="hide-caption">아이콘, 설명으로 날씨 아이콘을 설명하는 표입니다.</caption>
+		<colgroup>
+			<col style="width:15%">
+			<col style="width:35%">
+			<col style="width:15%">
+			<col style="width:35%">
+		</colgroup>
+		<thead>
+		<tr>
+			<td scope="col">날씨기호</td>
+			<td scope="col">설명</td>
+			<td scope="col">날씨기호</td>
+			<td scope="col">설명</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><img class="ic_img" src="NB01.png" alt="맑음"></td>
+			<td>맑음</td>
+			<td><img class="ic_img" src="NB01_N.png" alt="맑음 (밤)"></td>
+			<td>맑음 (밤)</td>
+		</tr>
+		<tr>
+		  <td><img class="ic_img" src="NB02.png" alt="구름조금 (낮)"></td>
+		  <td>구름조금 (낮)</td>
+		  <td><img class="ic_img" src="NB02_N.png" alt="구름조금 (밤)"></td>
+		  <td>구름조금 (밤)</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB03.png" alt="구름많음 (낮)"></td>
+			<td>구름많음 (낮)</td>
+			<td><img class="ic_img" src="NB03_N.png" alt="구름많음 (밤)"></td>
+			<td>구름많음 (밤)</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB04.png" alt="흐림"></td>
+			<td>흐림</td>
+			<td><img class="ic_img" src="NB07.png" alt="소나기"></td>
+			<td>소나기</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB08.png" alt="비"></td>
+			<td>비</td>
+			<td><img class="ic_img" src="NB20.png" alt="가끔 비, 한때 비"></td>
+			<td>가끔 비, 한때 비</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB11.png" alt="눈"></td>
+			<td>눈</td>
+			<td><img class="ic_img" src="NB21.png" alt="가끔 눈, 한때 눈"></td>
+			<td>가끔 눈, 한때 눈</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB12.png" alt="비 또는 눈"></td>
+			<td>비 또는 눈</td>
+			<td><img class="ic_img" src="NB22.png" alt="가끔 비 또는 눈, 한때 비 또는 눈 "></td>
+			<td>가끔 비 또는 눈, <br>한때 비 또는 눈</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB13.png" alt="눈 또는 비"></td>
+			<td>눈 또는 비</td>
+			<td><img class="ic_img" src="NB23.png" alt="가끔 눈또는 비, 한때 눈 또는 비"></td>
+			<td>가끔 눈 또는 비,<br>한때 눈 또는 비</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="DB_LGT.png" alt="낙뢰"></td>
+			<td>낙뢰</td>
+			<td><img class="ic_img" src="DB10.png" alt="빗방울"></td>
+			<td>빗방울</td>					
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB18.png" alt="연무"></td>
+			<td>연무</td>
+			<td><img class="ic_img" src="DB12.png" alt="눈날림"></td>
+			<td>눈날림</td>						
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB15.png" alt="안개"></td>
+			<td>안개</td>
+			<td><img class="ic_img" src="NB17.png" alt="박무 (엷은 안개)"></td>
+			<td>박무 (엷은 안개)</td>				
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB16.png" alt="황사"></td>
+			<td>황사</td>
+			<td colspan="2" class="info"><a href="kma_icon.png" target="_blank"><img class="ic_img" src="btn_icon_info.gif" alt="강수 아이콘 구분 안내"></a></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="buoy_wind"><img src="NB24.png" alt="부이" class="ic_img"><strong>부이</strong></td>
+			<td colspan="2">
+				<a rel="license" target="_blank" href="http://www.kogl.or.kr/open/koglLicenseInfoView.do?license_type=4&amp;egov_code=372&amp;license_idx=13251"><img alt="공공누리" src="https://www.kogl.or.kr/open/web/images/content/symbol04.gif" class="ic_img"></a>
+				<div>
+					<span>날씨 아이콘</span> 저작물은 "공공누리"
+					<a rel="license" href="http://www.kogl.or.kr/open/koglLicenseInfoView.do?license_type=4&amp;egov_code=372&amp;license_idx=13251" target="_blank"> 출처표시-상업적이용금지-변경금지 </a> 조건에 따라 이용 할 수 있습니다.
+				</div>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
