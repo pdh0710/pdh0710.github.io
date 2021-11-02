@@ -36,7 +36,17 @@ HTML {
 BODY {
 	width: 100%;
 	height:	100%;
-	background-color:#def;
+	background-color: #80b8f0;
+	background-attachment: fixed;
+}
+.bg {
+	position: fixed;
+	z-index: -1;
+	background:	radial-gradient(ellipse closest-corner, #fff, #78b0e8);
+	width: 100%;
+	height:	100%;
+	padding: 0;
+	margin: 0;
 }
 
 body, table, th, td {
@@ -44,13 +54,32 @@ body, table, th, td {
     color: #000000;
 }
 
+.head {
+	text-align:center;
+	margin:auto;
+	padding:1.5rem 0;
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-shadow:0 0 0.2rem white;
+}
+.img_info {
+	text-align:center;
+	padding:1.5rem 0;
+}
+.img_info img {
+	width: 95%;
+	max-width: 806px;
+	margin:auto;
+}
+
 table {
     border-collapse: separate;
     border-spacing: 0;
 	max-width:806px;
 	margin: 0 auto;
-	background-color:#fffaf7;
-	border-bottom: solid 2px#555;
+	width:95%;
+	background-color:#fffbf8;
+	border-bottom: solid 0.2rem #555;
 }
 .table-col img {
     max-width: 100%;
@@ -62,22 +91,22 @@ table {
     border-left: 0;
 }
 .table-col thead td{
-	height: 50px;
+    padding: 0.9rem;
+    text-align: center;
 	font-weight: bold;
+	font-size: 1.09rem;
 	color:white;
 	background-color: #555;
 	border-top: 0;
 	border-bottom: 0;
 }
 .table-col td {
-    font-size: 100%;
-    border-bottom: 1px solid #e0e6ef;
-    border-left: 1px solid #e0e6ef;
-	line-height: 1.4;
-}
-.table-col th, .table-col td {
-    padding: 10px;
+    padding: 0.1rem;
     text-align: center;
+    font-size: 100%;
+    border-bottom: 0.1rem solid #e0e6ef;
+    border-left: 0.1rem solid #e0e6ef;
+	line-height: 1.4;
 }
 .table-col .ic_img {
     height: auto;
@@ -87,17 +116,13 @@ table {
     width: 50%;
     height: 50%;
 }
-
-.head {
-	text-align:center;
-	margin:auto;
-	padding:25px 0;
-	font-weight: bold;
-	font-size: larger;
+.table-col .info {
+    padding: 1rem;
 }
+
 .span_like {
 	display: inline-block;
-	padding: 3px;
+	padding: 0.3rem;
 }
 .text_left {
 	text-align: left !important;
@@ -108,18 +133,9 @@ table {
 .text_right {
 	text-align: right !important;
 }
-.img_info {
-	text-align:center;
-	padding:25px 0;
-}
-.img_info img {
-	width: 100%;
-	max-width: 806px;
-	margin:auto;
-}
 </style>
 </head>
-<body>
+<body><div class="bg"></div>
 	<p class="head">• 한국 기상청 날씨 아이콘 •</p>
 	<table class="table-col">
 		<colgroup>
@@ -207,7 +223,7 @@ table {
 			<td><img class="ic_img" src="NB16.png" alt="황사"></td>
 			<td>황사</td>
 			<td colspan="2" rowspan="2">
-				<div class="text_left"><br />• 한국 기상청에서 사용하는 날씨 아이콘(날씨기호)의 의미를 설명하는 도표입니다.<br /><br />• 날씨 아이콘 저작물은 <strong>"공공누리" <a rel="license" href="http://www.kogl.or.kr/open/koglLicenseInfoView.do?license_type=4&amp;egov_code=372&amp;license_idx=13251" target="_blank"> 출처표시-상업적이용금지-변경금지 </a> 조건</strong>에 따라 이용 할 수 있습니다.</div>
+				<div class="text_left info"><br />• 한국 기상청에서 사용하는 날씨 아이콘(날씨기호)의 의미를 설명하는 도표입니다.<br /><br />• 날씨 아이콘 저작물은 <strong>"공공누리" <a rel="license" href="http://www.kogl.or.kr/open/koglLicenseInfoView.do?license_type=4&amp;egov_code=372&amp;license_idx=13251" target="_blank"> 출처표시-상업적이용금지-변경금지 </a> 조건</strong>에 따라 이용 할 수 있습니다.</div>
 				<a rel="license" target="_blank" href="http://www.kogl.or.kr/open/koglLicenseInfoView.do?license_type=4&amp;egov_code=372&amp;license_idx=13251"><img alt="공공누리" src="https://www.kogl.or.kr/open/web/images/content/symbol04.gif" class="ic_img"></a><br /><br />
 			</td>
 		</tr>
