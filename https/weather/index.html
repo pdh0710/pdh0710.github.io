@@ -79,7 +79,7 @@ BODY {
 #wmap {
 	width: 100%;
 	height:	100%;
-	background:	url(wmap/skorea.png) no-repeat;
+	background:	url(skorea.png) no-repeat;
 	background-position: left top;
 	background-size: 100%;
 	padding: 0;
@@ -176,7 +176,7 @@ div[id^=row] {position:relative;overflow:hidden;width:600px;z-index:1;}
 #sat2, #sat3 { height:533px; }
 
 </style>
-<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="../common.js"></script>
 </head>
 <body>
 
@@ -196,7 +196,7 @@ div[id^=row] {position:relative;overflow:hidden;width:600px;z-index:1;}
 		<!-- <div class=cover onclick='window.open("https://www.weather.go.kr/w/index.do", "_blank");'></div> -->
 	</div>
 	<div id=row_foot>
-		&bull; 날씨정보 :<a href="https://www.weather.go.kr/w/index.do" target=_blank>한국기상청</a> &nbsp; &bull; WindMap :<a href="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-225.12,28.82" target=_blank>nullschool</a>,<a href="https://www.weather.go.kr/weather/home/earth/index.jsp" target=_blank>기상청</a>
+		&bull; 날씨정보 :<a href="https://www.weather.go.kr/w/index.do" target=_blank>한국기상청</a>, <a href="icons.html" target=_blank>날씨아이콘 의미</a> &nbsp; &bull; WindMap :<a href="https://earth.nullschool.net/#current/wind/surface/level/orthographic=-225.12,28.82" target=_blank>nullschool</a>,<a href="https://www.weather.go.kr/weather/home/earth/index.jsp" target=_blank>기상청</a>
 	<!-- &bull; 날짜정보:<a href="http://astro.kasi.re.kr/" target=_blank>한국천문연구원</a> -->
 	</div>
 	<!-- <a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ko020lc&data=true%2Bir&itv=0.5" target=_blank><img src="" id=sat0></a> -->
@@ -253,7 +253,7 @@ function Wcurr() {
 	document.getElementById('curr-location').innerHTML = weatherCurrent.location;
 	document.getElementById('curr-updated').innerHTML = tm2str(weatherCurrent.updated);
 	var o = weatherCurrent.sky;
-	var inner = '<img class="bgpng" src="wmap/'+ o[1] +'" alt="'+ o[0] +'"><br /><br />'
+	var inner = '<img class="bgpng" src="'+ o[1] +'" alt="'+ o[0] +'"><br /><br />'
 	o = weatherCurrent.current;
 	inner += '현재 : 기온 = ' + o[0] + ' ' + o[1] + '<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 습도 = ' + o[2] + ', 바람 = ' + o[3] + ', 1시간 강수량 = ' + o[4] + '<br /><br />'
 	o = weatherCurrent.minmax;
@@ -271,7 +271,7 @@ function Wmap() {
 	var inner = '';
 	for(var i=0; i<weatherMap.data.length; i++) {
 		var dl = weatherMap.data[i];
-		inner += '<dl class="'+ dl[1] +'"><dt>'+ dl[0] +'</dt><dd><img src="wmap/'+ dl[3] +'" alt="'+ dl[2] +'">'+ dl[4] +'</dd></dl>';
+		inner += '<dl class="'+ dl[1] +'"><dt>'+ dl[0] +'</dt><dd><img src="'+ dl[3] +'" alt="'+ dl[2] +'">'+ dl[4] +'</dd></dl>';
 	}
 	document.getElementById('wmap').innerHTML = inner;
 }
@@ -288,7 +288,7 @@ for(var i=1; i<intv.length; i+=2) {
 addScript(name2url('Current'), Wcurr);
 addScript(name2url('Map'), Wmap);
 if( location.href == top.location.href )
-	addCSS('bg.css');
+	addCSS('../bg.css');
 
 </script>
 </body>

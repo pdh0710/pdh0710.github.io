@@ -43,7 +43,7 @@ BODY {
 #wmap {
 	width: 100%;
 	height:	100%;
-	background:	url(wmap/skorea.png) no-repeat;
+	background:	url(weather/skorea.png) no-repeat;
 	background-position: left top;
 	background-size: 100%;
 	padding: 0;
@@ -159,9 +159,9 @@ div[id^=row] {position:relative;overflow:hidden;width:600px;z-index:1;}
 		&bull; 날짜정보:<a href="http://astro.kasi.re.kr/" target=_blank>한국천문연구원</a>
  -->
 	</div>
-	<a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ko020lc&data=true%2Bir&itv=0.5" target=_blank><img src="" id=sat0></a>
+	<!-- <a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ko020lc&data=true%2Bir&itv=0.5" target=_blank><img src="" id=sat0></a> -->
 	<a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ko020lc&data=ir105&itv=0.5" target=_blank><img src="" id=sat1></a>
-	<a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ea020lc&data=true%2Bir&itv=0.5" target=_blank><img src="" id=sat2></a>
+	<!-- <a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ea020lc&data=true%2Bir&itv=0.5" target=_blank><img src="" id=sat2></a> -->
 	<a class=sat href="https://www.weather.go.kr/weather/images/satellite_gk2a_pop.jsp?autoStart=false&zoomLevel=0&zoomX=0000000&zoomY=0000000&showOption=true&showOptionControl=&area=ea020lc&data=ir105&itv=0.5" target=_blank><img src="" id=sat3></a>
 </div>
 
@@ -196,7 +196,7 @@ function Wmap() {
 	var inner = '';
 	for(var i=0; i<weatherMap.data.length; i++) {
 		var dl = weatherMap.data[i];
-		inner += '<dl class="'+ dl[1] +'"><dt>'+ dl[0] +'</dt><dd><img src="wmap/'+ dl[3] +'" alt="'+ dl[2] +'">'+ dl[4] +'</dd></dl>';
+		inner += '<dl class="'+ dl[1] +'"><dt>'+ dl[0] +'</dt><dd><img src="weather/'+ dl[3] +'" alt="'+ dl[2] +'">'+ dl[4] +'</dd></dl>';
 	}
 	document.getElementById('wmap').innerHTML = inner;
 }
@@ -224,7 +224,7 @@ function getImage(idx) {
 	img.src = src;
 }
 
-for(var i=0; i<intv.length; i++) {
+for(var i=1; i<intv.length; i+=2) {
 	tm[i] = Math.floor( curr.getTime() / intv[i] );
 	getImage(i);
 }
