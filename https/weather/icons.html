@@ -61,23 +61,12 @@ body, table, th, td {
 	background-color: #457ab2;
 	border-radius: 0.5rem;
 }
-.img_info {
-	text-align:center;
-	padding:1.5rem 0;
-}
-.img_info img {
-	width: 95%;
-	max-width: 788px;
-	margin:auto;
-	border-radius: 0.5rem;
-	overflow: hidden;
-}
 
 table {
     border-collapse: separate;
     border-spacing: 0;
 	width:95%;
-	max-width: 788px;
+	max-width: 800px;
 	margin: 0 auto;
 	background-color:#fffbf8;
 	/* border-bottom: solid 0.2rem #888; */
@@ -109,7 +98,12 @@ table {
     font-size: 100%;
     border-bottom: 0.1rem solid #e0e6ef;
     border-left: 0.1rem solid #e0e6ef;
-	line-height: 1.4;
+	line-height: 1.6;
+}
+.table-col .no_left_border {
+	border-left: 0;
+	text-align: left;
+	padding:0.7rem 0;
 }
 .table-col .ic_img {
     height: auto;
@@ -237,6 +231,53 @@ table {
 		</tr>
 		</tbody>
 	</table>
-	<div class="img_info"><img src="kma_icon.png" alt="강수 아이콘 구분 안내"></div>
+	<div class="head"><p>강수 아이콘 구분 안내</p></div>
+	<table class="table-col">
+		<colgroup>
+			<col style="width:16%">
+			<col style="width:14%">
+			<col style="width:20%">
+			<col style="width:14%">
+			<col style="width:36%">
+		</colgroup>
+		<thead>
+		<tr>
+			<td scope="col">구분</td>
+			<td colspan="2" scope="col">지속적 강수</td>
+			<td colspan="2" scope="col">일시적 강수</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>비</td>
+			<td><img class="ic_img" src="NB08.png" alt="비"></td>
+			<td class="no_left_border">흐리고 비</td>
+			<td><img class="ic_img" src="NB20.png" alt="가끔 비, 한때 비"></td>
+			<td class="no_left_border">구름 많고 비<br />구름 많고 가끔(한때) 비<br />흐리고 가끔(한때) 비</td>
+		</tr>
+		<tr>
+			<td>눈</td>
+			<td><img class="ic_img" src="NB11.png" alt="눈"></td>
+			<td class="no_left_border">흐리고 눈</td>
+			<td><img class="ic_img" src="NB21.png" alt="가끔 눈, 한때 눈"></td>
+			<td class="no_left_border">구름 많고 눈<br />구름 많고 가끔(한때) 눈<br />흐리고 가끔(한때) 눈</td>
+		</tr>
+		<tr>
+			<td>비 또는 눈</td>
+			<td><img class="ic_img" src="NB12.png" alt="비 또는 눈"></td>
+			<td class="no_left_border">흐리고 비 또는 눈</td>
+			<td><img class="ic_img" src="NB22.png" alt="가끔 비 또는 눈, 한때 비 또는 눈 "></td>
+			<td class="no_left_border">구름 많고 비 또는 눈<br />구름 많고 가끔(한때) 비 또는 눈<br />흐리고 가끔(한때) 비 또는 눈</td>
+		</tr>
+		<tr>
+			<td>눈 또는 비</td>
+			<td><img class="ic_img" src="NB13.png" alt="눈 또는 비"></td>
+			<td class="no_left_border">흐리고 눈 또는 비</td>
+			<td><img class="ic_img" src="NB23.png" alt="가끔 눈또는 비, 한때 눈 또는 비"></td>
+			<td class="no_left_border">구름 많고 눈 또는 비<br />구름 많고 가끔(한때) 눈 또는 비<br />흐리고 가끔(한때) 눈 또는 비</td>
+		</tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
 </body>
 </html>
