@@ -46,6 +46,7 @@ BODY {
 .curr_weather_wrapper .bgpng {
 	border-radius: 27%;
 	background-color: #eee;
+	vertical-align: middle;
 }
 #curr {
 	width: 100%;
@@ -253,13 +254,13 @@ function Wcurr() {
 	document.getElementById('curr-location').innerHTML = weatherCurrent.location;
 	document.getElementById('curr-updated').innerHTML = tm2str(weatherCurrent.updated);
 	var o = weatherCurrent.sky;
-	var inner = '<img class="bgpng" src="'+ o[1] +'" alt="'+ o[0] +'"><br /><br />'
+	var inner = '<img class="bgpng" src="'+ o[1] +'" alt="'+ o[0] +'"> '+ o[0] +'<br /><br />';
 	o = weatherCurrent.current;
-	inner += '현재 : 기온 = ' + o[0] + ' ' + o[1] + '<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 습도 = ' + o[2] + ', 바람 = ' + o[3] + ', 1시간 강수량 = ' + o[4] + '<br /><br />'
+	inner += '현재 : 기온 = ' + o[0] + ' ... "' + o[1] + '"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 습도 = ' + o[2] + ', 바람 = ' + o[3] + ', 1시간 강수량 = ' + o[4] + '<br /><br />'
 	o = weatherCurrent.minmax;
 	inner += '실황 최저 = ' + o[0] + ', 최고 = ' + o[1] + ' ... 예보 최저 = ' + o[2] + ', 최고 = ' + o[3] + '<br /><br />'
 	o = weatherCurrent.air;
-	inner += '공기질 : ' + o[0] + ', ' + o[1] + ', ' + o[2] + '<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ' + o[3] + '<br /><br />' 
+	inner += '공기질 : ' + o[0] + ', ' + o[1] + ', ' + o[2].replace('O3', 'O₃') + '<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ' + o[3] + '<br /><br />' 
 	for (var [key, value] of Object.entries(weatherCurrent)) {
 		inner += key + ' = "' + value + '"' + ' ..... '
 	}
