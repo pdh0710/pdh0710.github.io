@@ -24,10 +24,6 @@ var bmk = [
 	[	[1, 'News Archive', 1, 1],
 		[0, "https://www.yna.co.kr/industry/all?site=navi_industry_depth02", "연합뉴스 - 산업 전체기사"],
 		[0, "http://news.danawa.com/News_List_List.php", "전체 기사 :: 행복쇼핑의 시작! 다나와"],
-		[0, "http://www.parkoz.com/zboard/zboard.php?id=int_news", "파코즈 - 해외 하드웨어 뉴스"],
-		[1, "http://www.parkoz.com/zboard/zboard.php?id=int_vganews", "해외 그래픽"],
-		[1, "http://www.parkoz.com/zboard/zboard.php?id=dm_techinfo", "해외 미디어"],
-		[1, "http://www.parkoz.com/zboard/zboard.php?id=mb_techinfo", "해외 모바일"],
 		[0, "http://www.slrclub.com/bbs/zboard.php?id=newproduct_sony", "SLR클럽 Sony 신제품게시판"],
 		[1, "http://www.slrclub.com/bbs/zboard.php?id=newproduct_nikon", "니콘 신제품"],
 		[1, "http://www.slrclub.com/bbs/zboard.php?id=newproduct", "캐논 신제품"]
