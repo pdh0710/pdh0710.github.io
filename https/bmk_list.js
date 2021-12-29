@@ -275,7 +275,7 @@ var bmk = [
 		[1, "https://login.coupang.com/login/login.pang?rtnUrl=https%3A%2F%2Fmc.coupang.com%2Fssr%2Fdesktop%2Forder%2Flist", "쿠팡"],
 		[1, "https://front.wemakeprice.com/user/login?returnUrl=%2Fmypage%2Forders&type=GENERAL", "위메프"],
 		[-1],
-		[0, "https://www.cultureland.co.kr/main.do", "컬쳐랜드"],
+		[0, "https://m.cultureland.co.kr/mmb/loginMain.do", "컬쳐랜드"],
 		[1, "https://www.payco.com/", "페이코"],
 		[-1],
 		[0, "http://www.yes24.com/", "YES24 - 대한민국 대표 인터넷서점"],
