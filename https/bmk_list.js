@@ -264,6 +264,7 @@ var bmk = [
 		[0, "https://memberssl.auction.co.kr/authenticate/?url=http%3a%2f%2fmember.auction.co.kr%2fMyauction%2fdefault.aspx%3ffrm%3dhometab", "옥션"],
 		[1, "https://signinssl.gmarket.co.kr/LogIn/LogIn?URL=http://myg.gmarket.co.kr/", "G마켓"],
 		[1, "https://ssl.g9.co.kr/Member/CustomerService/AllLogin?redirectUrl=http%3a%2f%2fwww.g9.co.kr%2fMember%2fMyPage", "G9"],
+		[1, "https://member.ssg.com/member/login.ssg?retURL=https%3A%2F%2Fwww.ssg.com%2Fmyssg%2Fmain.ssg%3Fgnb%3Dmyssg", "SSG"],
 		[1, "https://www.mysmilepay.com/", "스마일페이"],
 		[0, "https://login.11st.co.kr/login/Login.tmall?returnURL=http%3A%2F%2Fbuy.11st.co.kr%2Forder%2FmyTmall.tmall%3Fmethod%3DgetMyTmallMain", "11번가"],
 		[0, "https://www.interpark.com/member/login.do?_method=initial&entrJoin=N&imfsUserPath=%2Fmypage%2Fcommon%2FMyPage.do", "인터파크"],
