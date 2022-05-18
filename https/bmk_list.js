@@ -15,11 +15,7 @@ var bmk = [
 		[0, "https://www.coolenjoy.net/bbs/board.php?bo_table=38", "쿨앤 뉴스/신제품"],
 		[0, "https://quasarzone.com/bbs/qn_hardware", "퀘이사존 하드웨어 뉴스"],
 		[1, "https://quasarzone.com/bbs/qn_mobile", "모바일"],
-		[1, "https://quasarzone.com/bbs/qn_partner", "파트너"],
-		[-1],
-		[0, "https://quasarzone.com/bbs/qb_saleinfo", "퀘이사존"],
-		[1, "https://www.clien.net/service/board/jirum", "클리앙"],
-		[1, "https://www.coolenjoy.net/bbs/jirum", "쿨앤"]
+		[1, "https://quasarzone.com/bbs/qn_partner", "파트너"]
 	],
 	[	[1, 'News Archive', 1, 1],
 		[0, "https://www.yna.co.kr/industry/all?site=navi_industry_depth02", "연합뉴스 - 산업 전체기사"],
@@ -254,7 +250,7 @@ var bmk = [
 //		[0, "http://news.softpedia.com/news/How-to-Install-and-Run-Android-Apps-in-a-Linux-OS-477407.shtml", "How to Install and Run Android Apps in a Linux OS - Softpedia"],
 //		[0, "http://superuser.com/questions/247651/how-does-one-install-an-extension-for-chrome-browser-from-the-local-file-system", "How does one install an extension for Chrome browser from the local file system? - Super User"]
 //	],
-	[	[0, 'Shop', 0, 0],
+	[	[0, "Shop", 0, 0],
 		[0, "http://www.danawa.com/", "행복쇼핑의 시작! 다나와 (가격비교)"],
 		[1, "http://dmall.danawa.com/", "장터"],
 		[0, "http://www.enuri.com/", "에누리(가격비교) eNuri.com"],
@@ -291,7 +287,12 @@ var bmk = [
 		[-1],
 		[0, "http://www.okcashbag.com/", "OK캐쉬백"]
 	],
-	[	[1, 'Foreign', 1, 0],
+	[	[1, "알뜰 정보", 0, 1],
+		[0, "https://quasarzone.com/bbs/qb_saleinfo", "퀘이사존"],
+		[1, "https://www.clien.net/service/board/jirum", "클리앙"],
+		[1, "https://www.coolenjoy.net/bbs/jirum", "쿨앤"]
+	],
+	[	[1, "Foreign", 1, 0],
 		[0, "https://www.amazon.com/", "Amazone"],
 		[1, "http://camelcamelcamel.com/", "camelcamelcamel, Amazone Price Tracker"],
 		[0, "https://www.newegg.com/global/kr-en/", "Newegg"],
