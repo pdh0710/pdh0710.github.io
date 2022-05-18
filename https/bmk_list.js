@@ -287,7 +287,7 @@ var bmk = [
 		[-1],
 		[0, "http://www.okcashbag.com/", "OK캐쉬백"]
 	],
-	[	[1, "알뜰 정보", 1, 1],
+	[	[1, "할인 정보", 1, 1],
 		[0, "https://quasarzone.com/bbs/qb_saleinfo", "퀘이사존"],
 		[1, "https://www.clien.net/service/board/jirum", "클리앙"],
 		[1, "https://www.coolenjoy.net/bbs/jirum", "쿨앤"]
