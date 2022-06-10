@@ -5,14 +5,14 @@
 var bmk = [
 	[	[0, "Daily News", 1, 1],
 		[0, "https://apod.nasa.gov/apod/astropix.html", "Astronomy Picture of the Day"],
-		[0, "https://twitter.com/dailygalaxy", "The Daily Galaxy Twitter"],
+//		[0, "https://twitter.com/dailygalaxy", "The Daily Galaxy Twitter"],
 		[0, "https://www.sciencetimes.co.kr/?cat=36", "Sciencetimes 한국- 뉴스"],
 		[0, "https://www.dpreview.com/", "Digital Photography Review"],
-		[0, "https://www.zdnet.co.kr/news/?lstcode=0000&page=1", "지디넷코리아 - 최신 뉴스"],
+//		[0, "https://www.zdnet.co.kr/news/?lstcode=0000&page=1", "지디넷코리아 - 최신 뉴스"],
 		[0, "https://www.boannews.com/media/list.asp?mkind=1", "보안 뉴스 - Security"],
 		[0, "https://www.itworld.co.kr/news/", "IT World 한국 : 뉴스"],
-		[0, "https://www.clien.net/service/board/news", "클리앙 새로운 소식"],
-		[0, "https://www.coolenjoy.net/bbs/board.php?bo_table=38", "쿨앤 뉴스/신제품"],
+//		[0, "https://www.clien.net/service/board/news", "클리앙 새로운 소식"],
+//		[0, "https://www.coolenjoy.net/bbs/board.php?bo_table=38", "쿨앤 뉴스/신제품"],
 		[0, "https://quasarzone.com/bbs/qn_hardware", "퀘이사존 하드웨어 뉴스"],
 		[1, "https://quasarzone.com/bbs/qn_mobile", "모바일"],
 		[1, "https://quasarzone.com/bbs/qn_partner", "파트너"]
