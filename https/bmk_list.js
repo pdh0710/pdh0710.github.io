@@ -171,7 +171,7 @@ var bmk = [
 	],
 	[	[2, 'Daily', 1, 1],
 		[0, "http://www.cineast.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 자막자료실"],
-		[0, "https://torrentdia24.com/bbs/board.php?bo_table=torrent_movieov", "토렌트다이아 - 해외영화"],
+		[0, "https://torrentdia25.com/bbs/board.php?bo_table=torrent_movieov", "토렌트다이아 - 해외영화"],
 		[0, "https://rarbgunblocked.org/torrents.php?search=&category%5B%5D=47&category%5B%5D=52&category%5B%5D=42&category%5B%5D=46", "RARBG Rarbg Torrents, Films"]
 	],
 	[	[0, "Develope", 1, 0],
