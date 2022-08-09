@@ -83,7 +83,7 @@ var bmk = [
 		[1, "https://pdh0710.freeddns.org/myip.php", "My IP address (plain text)"],
 		[0, "https://glimelite.wordpress.com/", "glimelite@wordpress.com"],
 		[-1],
-		[0, "https://pdh0710.github.io/https/wt.html", "날씨 정보"],
+		[0, "https://pdh0710.github.io/https/wmap.html", "날씨 정보"],
 		[1, "https://pdh0710.github.io/https/color_test.html", "모니터 색조정"],
 		[1, "https://pdh0710.github.io/https/colors.html", "Color Bars"],
 		[1, "https://pdh0710.github.io/https/colors_fine.html", "Color Bars Fine"],
