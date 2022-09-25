@@ -159,7 +159,7 @@ var bmk = [
 	[	[1, "Torrent", 0, 0],
 		[0, "https://bunco.co/", "번코"],
 		[0, "https://www.xn--sm2bu1n2xfsllblbca.com/", "토런트다이아"],
-		[1, "https://xn--sm2bu1n2xfsllblbca.net/", "토렌트다이아 주소"]
+		[1, "https://xn--sm2bu1n2xfsllblbca.net/", "토렌트다이아 주소"],
 		[0, "https://bunyuc.com/", "번역 포럼"],
 		[0, "https://jamak.tv/", "자막나라"],
 		[0, "http://www.jamack.net/", "자막넷"],
@@ -167,7 +167,7 @@ var bmk = [
 		[1, "https://torrentonly.com/smi", "자막"],
 		[0, "https://thepiratebay.org/", "The Pirate Bay"],
 		[0, "https://rarbg.to", "RARBG Rarbg Torrents"],
-		[0, "https://torrenthaja26.com/", "토렌트하자"],
+		[0, "https://torrenthaja26.com/", "토렌트하자"]
 	],
 	[	[2, 'Daily', 1, 1],
 		[0, "http://www.cineast.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 자막자료실"],
