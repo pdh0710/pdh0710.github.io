@@ -14,8 +14,8 @@ var bmk = [
 //		[0, "https://www.clien.net/service/board/news", "클리앙 새로운 소식"],
 //		[0, "https://www.coolenjoy.net/bbs/board.php?bo_table=38", "쿨앤 뉴스/신제품"],
 		[0, "https://quasarzone.com/bbs/qn_hardware", "퀘이사존 하드웨어 뉴스"],
-		[1, "https://quasarzone.com/bbs/qn_mobile", "모바일"],
-		[1, "https://quasarzone.com/bbs/qn_partner", "파트너"]
+//		[1, "https://quasarzone.com/bbs/qn_partner", "파트너"],
+		[1, "https://quasarzone.com/bbs/qn_mobile", "모바일"]
 	],
 	[	[1, 'News Archive', 1, 1],
 		[0, "https://www.yna.co.kr/industry/all?site=navi_industry_depth02", "연합뉴스 - 산업 전체기사"],
@@ -170,7 +170,7 @@ var bmk = [
 	],
 	[	[2, 'Daily', 1, 1],
 		[0, "http://www.cineast.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 자막자료실"],
-		[0, "https://torrentdia55.com/bbs/board.php?bo_table=torrent_movieov", "토렌트다이아 - 해외영화"],
+		[0, "https://torrentdia56.com/bbs/board.php?bo_table=torrent_movieov", "토렌트다이아 - 해외영화"],
 		[0, "https://rarbgunblocked.org/torrents.php?search=&category%5B%5D=47&category%5B%5D=52&category%5B%5D=42&category%5B%5D=46", "RARBG Rarbg Torrents, Films"]
 	],
 	[	[0, "Develope", 1, 0],
