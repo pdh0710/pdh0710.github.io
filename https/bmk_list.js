@@ -158,7 +158,7 @@ var bmk = [
 	],
 	[	[1, "Torrent", 0, 0],
 		[0, "https://bunco.co/", "번코"],
-		[0, "https://xn--sm2bu1n2xfsllblbca.net/", "토렌트다이아 주소"],
+		[0, "https://xn--950bz4kqroyzjblb.com/", "토렌트다이아 주소"],
 		[0, "https://bunyuc.com/", "번역 포럼"],
 		[0, "https://jamak.tv/", "자막나라"],
 		[0, "http://www.jamack.net/", "자막넷"],
@@ -170,7 +170,7 @@ var bmk = [
 	],
 	[	[2, 'Daily', 1, 1],
 		[0, "http://www.cineast.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 자막자료실"],
-		[0, "https://torrentdia64.com/bbs/board.php?bo_table=torrent_movieov", "토렌트다이아 - 해외영화"],
+		[0, "https://torrentdia65.com/bbs/board.php?bo_table=torrent_movieov", "토렌트다이아 - 해외영화"],
 		[0, "https://rarbgunblocked.org/torrents.php?search=&category%5B%5D=47&category%5B%5D=52&category%5B%5D=42&category%5B%5D=46", "RARBG Rarbg Torrents, Films"]
 	],
 	[	[0, "Develope", 1, 0],
