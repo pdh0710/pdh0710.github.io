@@ -289,7 +289,7 @@ var bmk = [
 	],
 	[	[1, "할인 정보", 1, 1],
 	[0, "https://quasarzone.com/bbs/qb_saleinfo", "퀘이사존"],
-	[1, "https://www.coolenjoy.net/bbs/jirum", "쿨앤"],
+	[1, "https://www.ppomppu.co.kr/hotdeal/", "뽐뿌"],
 	[0, "https://quasarzone.com/bbs/qb_saleinfo?_method=post&type=&page=1&category=&popularity=&kind=subject&keyword=%EB%AC%B8%ED%99%94%EC%83%81%ED%92%88%EA%B6%8C&sort=num%2C+reply&direction=DESC", "Q존"],
 	[1, "http://browse.auction.co.kr/search?keyword=%EC%BB%AC%EC%B3%90%EB%9E%9C%EB%93%9C+5%EB%A7%8C%EC%9B%90&s=4", "옥션"],
 	[1, "https://browse.gmarket.co.kr/search?keyword=%ec%bb%ac%ec%b3%90%eb%9e%9c%eb%93%9c+5%eb%a7%8c%ec%9b%90&s=1", "G마켓"],
