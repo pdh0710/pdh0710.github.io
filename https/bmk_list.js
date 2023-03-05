@@ -114,6 +114,7 @@ var bmk = [
 		[-1],
 		[0, "https://speller.cs.pusan.ac.kr/", "한국어 맞춤법/문법 검사기"],
 		[0, "https://translators.to/?source=ko&target=en&text=", "번역기들"],
+		[0, "https://www.deepl.com/translator", "DeepL 번역"],
 		[0, "https://www.gingersoftware.com/grammarcheck", "Ginger Grammar Checker"],
 		[0, "https://www.wolframalpha.com/", "Wolfram|Alpha: Computational Knowledge Engine"],
 		[0, "https://www.desmos.com/calculator", "Desmos Graphing Calculator"],
