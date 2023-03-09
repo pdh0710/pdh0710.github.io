@@ -44,16 +44,13 @@ BODY {
 #hidden_box	{ position:absolute;top:0;left:0; height:20px;width:20px; border:none; overflow:hidden; visibility:hidden; }
 
 .desktop #inner	{ position:absolute;top:20px;left:0;width:auto;height:auto;	padding:0;margin:0;	background-color:transparent; /* hidden_box를 이용해 scroll	여백을	주기 위한 것	*/
-	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none;
-	-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none; }
+	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none; }
 .desktop #inner	#bm	{letter-spacing:0;padding:0;margin:0;width:auto;background-color:transparent;overflow:hidden;}
 
 .desktop #left { position:fixed;top:20px;left:20px;	height:auto;width:auto;	background-color:transparent; padding:0;margin:0; border-radius:5px;overflow:hidden;
-	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none;
-	-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none; } /*	???	left는 sidebar이고	position이 fixed... left가 화면	높이보다 크면	scroll이	잘 되어야 하는데??? */
+	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none; } /*	???	left는 sidebar이고	position이 fixed... left가 화면	높이보다 크면	scroll이	잘 되어야 하는데??? */
 .desktop #left #menu { width:auto;height:auto; background-color:transparent;padding:0;margin:0;display:block;
-	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none;
-	-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none; }
+	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none; }
 
 .desktop #left #menu div { display:block;text-decoration:none; font-family:Arial;font-weight:bold;font-size:14px;text-align:left;
 	color:white;background-color:#ef6c00; height:25px;width:auto; padding:3px 20px 0 20px;margin:0; }
@@ -66,14 +63,12 @@ BODY {
 .desktop #left #menu .select:hover { color:white;background-color:hsl(216, 70%,	75%); }
 
 .desktop #vsbar, .desktop #vsbutton	{ position:fixed;top:20px;left:0; width:15px; border-radius:7px;overflow:hidden;
-	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none;
-	-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none; }
+	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none; }
 .desktop #vsbar	{ height:15px;background-color:rgba(160,160,160, 0.38);z-index:10; }
 .desktop #vsbutton { height:auto;background-color:hsla(220, 55%, 35%,0.9);z-index:11; }
 
 .desktop #vsbutton div { position:relative;top:0;left:0; background:url("dot.png") no-repeat 0 0; overflow:hidden; width:15px !important;height:15px !important; background-color:transparent; z-index:10; cursor:pointer;
-	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none;
-	-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none; }
+	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none; }
 .desktop #vsbutton .icon_dot_white_small { background-position:0 0;	}
 .desktop #vsbutton .icon_dot_white { background-position:0 -15px; }
 .desktop #vsbutton .icon_dot_red_small { background-position:0 -30px; }
