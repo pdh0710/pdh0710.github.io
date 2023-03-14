@@ -1,19 +1,17 @@
-{
-	"dtags" : [
-		{
-			"id" : 1,
-			"name" : "Portal",
-			"parent" : 0
-		},
-		{
-			"id" : 2,
-			"name" : "Daily News",
-			"parent" : 0
-		},
-		{
-			"id" : 18,
-			"name" : "메일",
-			"parent" : 0
-		}
-	]
-}
+[
+	{
+		"id" : 1,
+		"name" : "Portal",
+		"parent" : 0
+	},
+	{
+		"id" : 2,
+		"name" : "Daily News",
+		"parent" : 0
+	},
+	{
+		"id" : 18,
+		"name" : "메일",
+		"parent" : 0
+	}
+]

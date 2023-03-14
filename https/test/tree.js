@@ -4,7 +4,7 @@ const jName = 'ctag.json';
 const jUrl = '/json/' + jName;
 const textarea = document.getElementById('textarea');
 const message = document.getElementById('message');
-let ctag = null;
+let ctag = [];
 
 
 async function loadJson() {
