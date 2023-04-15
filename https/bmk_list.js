@@ -36,7 +36,7 @@ var bmk = [
 		[1, "https://papago.naver.com/", "번역 "],
 		[1, "https://memo.naver.com/", "메모 "],
 		[-1],
-		[0, "https://movie.naver.com/", "네이버 영화 : 영화와 처음 만나는 곳"],
+		[0, "https://www.kobis.or.kr/", "영화관 입장권통합 전산망, 영화정보검색"],
 		[0, "https://www.imdb.com/search/", "IMDB Advanced Search"],
 		[0, "https://www.allmovie.com/", "AllMovie | Movie Search, Guide, Recommendations, and Reviews"],
 		[0, "https://www.rottentomatoes.com/", "Rotten Tomatoes"],
