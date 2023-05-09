@@ -79,6 +79,8 @@ var bmk = [
 		[1, "https://worlds2see.ddnsfree.com/media", "Media"],
 		[1, "https://worlds2see.ddnsfree.com/upload", "Upload"],
 		[0, "https://pdh0710.ddnsfree.com/", "pdh0710.ddnsfree.com"],
+		[1, "https://code.pdh0710.ddnsfree.com/", "Code-Server"],
+		[1, "https://jupyter.pdh0710.ddnsfree.com/", "JupyterLab"],
 		[0, "https://pdh0710.freeddns.org/", "pdh0710.freeddns.org"],
 		[1, "https://pdh0710.freeddns.org/myip.php", "My IP address (plain text)"],
 		[0, "https://glimelite.wordpress.com/", "glimelite@wordpress.com"],
