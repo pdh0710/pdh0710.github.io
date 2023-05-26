@@ -143,6 +143,7 @@ var bmk = [
 		[0, "https://notepad-plus-plus.org/", "Notepad++ Home"],
 		[0, "https://www.faststone.org/", "FastStone Image Viewer"],
 		[0, "https://www.sumatrapdfreader.org/", "Sumatra Free PDF Reader"],
+		[0, "https://www.partitionwizard.com/free-partition-manager.html", "MiniTool Partition Wizard Free"],
 		[-1],
 		[0, "https://github.com/Nevcairiel/LAVFilters/releases", "LAV Filters - releases"],
 		[0, "https://tv.kakao.com/guide/potplayer", "카카오TV 팟플레이어"],
