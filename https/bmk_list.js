@@ -149,6 +149,7 @@ var bmk = [
 		[0, "https://tv.kakao.com/guide/potplayer", "카카오TV 팟플레이어"],
 		[0, "https://www.aimp.ru/", "AIMP"],
 		[0, "https://www.foobar2000.org/", "foobar2000"],
+		[0, "https://codecguide.com/about_kl.htm", "K-Lite Codec Pack"],
 		[0, "https://www.shotcut.org/", "Shotcut : free, open source, cross-platform video editor"],
 		[-1],
 		[0, "https://www.freefilesync.org/", "FreeFileSync"],
