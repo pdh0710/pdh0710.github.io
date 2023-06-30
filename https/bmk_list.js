@@ -286,7 +286,6 @@ var bmk = [
 		[0, "http://www.ypbooks.co.kr/kor_index.yp", "▒ 인터넷 영풍문고 - 대한민국 최초 인터넷 서점"],
 		[0, "http://www.bugs.co.kr/", "음악은 역시, 벅스!"],
 		[0, "http://www.genie.co.kr/", "지니 뮤직"],
-		[-1],
 		[0, "https://www.megabox.co.kr/", "메가박스"],
 		[0, "https://www.cgv.co.kr/", "CGV"],
 		[0, "https://www.lottecinema.co.kr/", "롯데시네마"],
