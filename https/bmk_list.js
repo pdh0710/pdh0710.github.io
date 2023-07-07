@@ -177,7 +177,7 @@ var bmk = [
 	],
 	[	[2, 'Daily', 1, 1],
 		[0, "http://www.cineast.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 자막자료실"],
-		[0, "https://torrentqq263.com/torrent/mov.html", "토렌트큐큐 - 영화"],
+		[0, "https://torrentqq264.com/torrent/mov.html", "토렌트큐큐 - 영화"],
 		[0, "https://1337x.to/trending/d/movies/", "1337X Trending Movies"]
 	],
 	[	[0, "Develope", 1, 0],
@@ -253,10 +253,6 @@ var bmk = [
 		[1, "https://github.com/Bill-Gray/jpl_eph", "Github"],
 		[0, "http://www.astro.com/swisseph/swephinfo_e.htm", "SWISS EPHEMERIS"]
 	],
-//	[	[1, 'Tip', 1, 0],
-//		[0, "http://news.softpedia.com/news/How-to-Install-and-Run-Android-Apps-in-a-Linux-OS-477407.shtml", "How to Install and Run Android Apps in a Linux OS - Softpedia"],
-//		[0, "http://superuser.com/questions/247651/how-does-one-install-an-extension-for-chrome-browser-from-the-local-file-system", "How does one install an extension for Chrome browser from the local file system? - Super User"]
-//	],
 	[	[0, "Shop", 0, 0],
 		[0, "http://www.danawa.com/", "행복쇼핑의 시작! 다나와 (가격비교)"],
 		[1, "http://dmall.danawa.com/", "장터"],
