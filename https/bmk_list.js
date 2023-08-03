@@ -176,7 +176,7 @@ var bmk = [
 	],
 	[	[2, 'Daily', 1, 1],
 		[0, "http://www.cineast.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 자막자료실"],
-		[0, "https://torrentqq267.com/torrent/mov.html", "토렌트큐큐 - 영화"],
+		[0, "https://torrentqq268.com/torrent/mov.html", "토렌트큐큐 - 영화"],
 		[0, "https://1337x.to/trending/d/movies/", "1337X Trending Movies"]
 	],
 	[	[0, "Develope", 1, 0],
