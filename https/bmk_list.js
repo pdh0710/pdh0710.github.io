@@ -6,7 +6,7 @@ var bmk = [
 	[	[0, "Daily News", 1, 1],
 		[0, "https://apod.nasa.gov/apod/astropix.html", "Astronomy Picture of the Day"],
 //		[0, "https://twitter.com/dailygalaxy", "The Daily Galaxy Twitter"],
-		[0, "https://www.sciencetimes.co.kr/?cat=36", "Sciencetimes 한국- 뉴스"],
+		[0, "https://www.sciencetimes.co.kr/category/sci-tech/", "Sciencetimes 한국- 뉴스"],
 		[0, "https://www.dpreview.com/", "Digital Photography Review"],
 //		[0, "https://www.zdnet.co.kr/news/?lstcode=0000&page=1", "지디넷코리아 - 최신 뉴스"],
 		[0, "https://www.boannews.com/media/list.asp?mkind=1", "보안 뉴스 - Security"],
