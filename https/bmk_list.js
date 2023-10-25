@@ -194,6 +194,7 @@ var bmk = [
 		[-1],
 		[0, "https://www.blender.org/", "Blender"],
 		[0, "https://www.freecad.org/", "FreeCAD"],
+		[1, "https://github.com/realthunder/FreeCAD", "Link version"],
 		[-1],
 		[0, "https://code.visualstudio.com/", "VisualStudio Code"],
 		[1, "https://marketplace.visualstudio.com/VSCode", "VScode extensions"],
