@@ -57,7 +57,8 @@ var bmk = [
 		[0, "https://www.google.co.kr/maps/", "Maps"],
 		[1, "https://earth.google.com/", "Earch"],
 		[0, "https://play.google.com/store?hl=ko", "Play"],
-		[0, "https://www.youtube.com/", "YouTube"]
+		[0, "https://www.youtube.com/", "YouTube"],
+		[1, "https://music.youtube.com/", "Music"]
 	],
 	[	[1, "SNS & BBS", 1, 0],
 		[0, "https://twitter.com/login", "Twitter"],
