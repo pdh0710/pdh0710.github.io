@@ -198,6 +198,8 @@ var bmk = [
 		[0, "https://www.freecad.org/", "FreeCAD"],
 		[1, "https://forum.freecad.org/index.php", "forum"],
 		[1, "https://github.com/realthunder/FreeCAD", "Link version"],
+		[0, "https://upverter.com/", "Upverter"],
+		[0, "https://www.kicad.org/", "KiCad"],
 		[-1],
 		[0, "https://code.visualstudio.com/", "VisualStudio Code"],
 		[1, "https://marketplace.visualstudio.com/VSCode", "VScode extensions"],
