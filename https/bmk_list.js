@@ -209,6 +209,7 @@ var bmk = [
 		[-1],
 		[0, "https://code.visualstudio.com/", "VisualStudio Code"],
 		[1, "https://marketplace.visualstudio.com/VSCode", "VScode extensions"],
+		[1, "https://github.com/coder/code-server", "Code Server"],
 		[-1],
 		[0, "https://nodejs.org/", "Node.js"],
 		[1, "https://www.npmjs.com/", "npm"],
