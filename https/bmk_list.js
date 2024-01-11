@@ -37,7 +37,7 @@ var bmk = [
 		[1, "https://memo.naver.com/", "메모 "],
 		[1, "https://mybox.naver.com/", "MyBox"],
 		[0, "https://www.bing.com/", "Bing"],
-		[1, "https://www.bing.com/chat", "Chat"],
+		[1, "https://www.bing.com/search?q=Bing+AI&showconv=1", "Copilot"],
 		[1, "https://www.bing.com/images/create", "Image Creator"],
 		[1, "https://www.microsoft365.com/", "Microsoft365"],
 		[-1],
