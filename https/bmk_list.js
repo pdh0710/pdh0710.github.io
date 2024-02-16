@@ -52,7 +52,7 @@ var bmk = [
 	],
 	[	[1, "Google", 1, 0],
 		[0, "https://www.google.com/", "Google"],
-		[1, "https://bard.google.com/chat", "Bard"],
+		[1, "https://gemini.google.com/", "Gemini"],
 		[0, "https://mail.google.com/mail/u/0/#all", "Gmail"],
 		[0, "https://drive.google.com/drive/", "Drive"], [1, "https://colab.research.google.com/", "Colab"],
 		[0, "https://keep.google.com/", "Keep "],
