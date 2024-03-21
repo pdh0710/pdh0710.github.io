@@ -180,12 +180,12 @@ var bmk = [
 	],
 	[	[1, "Torrent", 0, 0],
 		[0, "https://convert.jamack.net/", "Online 자막 변환기"],
+		[0, "https://bunco.co/", "번코"],
 		[0, "https://thepiratebay.org/", "The Pirate Bay"],
 		[0, "https://1337x.to/home/", "1337X : Verified Torrents"]
 	],
 	[	[2, 'Daily', 1, 1],
 		[0, "http://www.cineast.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 자막자료실"],
-		[0, "https://bunco.co/", "번코"],
 		[0, "https://torrentqq302.com/torrent/mov.html", "토렌트큐큐 - 영화"],
 		[0, "https://1337x.to/trending", "1337X Trending Today"],
 		[1, "https://1337x.to/trending/d/movies/", "Movies"]
