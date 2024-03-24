@@ -75,6 +75,7 @@ var bmk = [
 		[0, "https://namu.wiki/", "나무 위키"],
 		[0, "https://windowsforum.kr/", "윈도우 포럼"],
 		[0, "http://osmanias.com/", "OSMANIA - 오에스매니아"],
+		[0, "https://muko.kr/", "무코"],
 		[0, "https://extmovie.com/", "익무"]
 	],
 	[	[0, "My Web", 1, 0],
