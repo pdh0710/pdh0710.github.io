@@ -25,8 +25,9 @@ var bmk = [
 		[1, "http://www.slrclub.com/bbs/zboard.php?id=newproduct", "캐논 신제품"]
 	],
 	[	[0, 'Portal', 1, 0],
-		[0,	"https://en.wikipedia.org/wiki/Main_Page", "Wikipedia, the free encyclopedia"],
+		[0, "https://en.wikipedia.org/wiki/Main_Page", "Wikipedia, the free encyclopedia"],
 		[1, "https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EB%8C%80%EB%AC%B8", "위키백과, 우리 모두의 백과사전"],
+		[0, "https://duckduckgo.com/", "DuckDuckGo"],
 		[0, "https://www.daum.net/", "Daum"],
 		[1, "https://map.daum.net/", "지도 "],
 		[1, "https://dic.daum.net/", "어학사전"],
