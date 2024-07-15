@@ -316,9 +316,9 @@ var bmk = [
 		[0, "http://www.okcashbag.com/", "OK캐쉬백"]
 	],
 	[	[1, "할인 정보", 1, 1],
-	[0, "https://quasarzone.com/bbs/qb_saleinfo", "퀘이사존"],
-	[1, "https://www.fmkorea.com/freedeal", "펨코 자유쇼핑"],
-	[1, "https://www.ppomppu.co.kr/hotdeal/", "뽐뿌"]
+	[0, "https://quasarzone.com/bbs/qb_saleinfo", "퀘이사존 핫딜"],
+	[1, "https://www.ppomppu.co.kr/hotdeal/", "뽐뿌 핫딜"],
+	[1, "https://www.fmkorea.com/freedeal", "펨코 자유쇼핑"]
 ],
 	[	[1, "Foreign", 1, 0],
 		[0, "https://www.amazon.com/", "Amazone"],
