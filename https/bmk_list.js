@@ -332,7 +332,7 @@ var bmk = [
 		[1, "https://intl.alipay.com/", "Alipay"],
 		[1, "https://www.alibaba.com/", "Alibaba"],
 		[-1],
-		[0, "https://www.qoo10.com/", "Qoo10-Global – 글로벌 구매, 공동구매"],
+//		[0, "https://www.qoo10.com/", "Qoo10-Global – 글로벌 구매, 공동구매"],
 		[0, "http://post.malltail.com/", "몰테일 - 해외직구"],
 		[1, "http://www.taillist.com/", "테일리스트 - 몰테일 쇼핑"],
 		[0, "https://www.ohmyzip.com/", "오마이집"],
