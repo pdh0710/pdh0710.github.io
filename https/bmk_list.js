@@ -293,6 +293,7 @@ var bmk = [
 		[0, "https://www.lotteon.com/p/display/main/lotteon", "롯데ON"],
 		[0, "http://www.gsshop.com/", "GS SHOP"],
 		[0, "https://www.hyundaihmall.com/", "H몰"],
+		[0, "https://www.hnsmall.com/", "홈&쇼핑"],
 //		[1, "http://www.akmall.com/", "AK몰"],
 //		[0, "https://shop.interpark.com/member/login.do?_method=initial&entrJoin=N&imfsUserPath=%2Fmypage%2Fcommon%2FMyPage.do&logintgt=mypage", "인터파크"],
 //		[1, "https://login.tmon.co.kr/user/loginform?message=login_required&return_url=%2Fuser%2FbuyInfo", "티몬"],
