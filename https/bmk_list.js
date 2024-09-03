@@ -183,7 +183,8 @@ var bmk = [
 	],
 	[	[1, "Torrent", 0, 0],
 		[0, "https://convert.jamack.net/", "Online 자막 변환기"],
-		[0, "https://bunco.co/", "번코"],
+//		[0, "https://bunco.co/", "번코"],
+		[0, "https://rankers.info/", "토렌트큐큐 최근 주소"],
 		[0, "https://thepiratebay.org/", "The Pirate Bay"],
 		[0, "https://1337x.to/home/", "1337X : Verified Torrents"],
 		[0, "https://glodls.to/home.php", "GloTorrents"]
