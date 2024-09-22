@@ -31,6 +31,7 @@ var bmk = [
 		[0, "https://www.daum.net/", "Daum"],
 		[1, "https://map.daum.net/", "지도 "],
 		[1, "https://dic.daum.net/", "어학사전"],
+		[1, "https://weather.daum.net/", "날씨"],
 		[0, "https://www.naver.com/", "네이버"],
 		[1, "https://map.naver.com/", "지도 "],
 		[1, "https://papago.naver.com/", "번역 "],
@@ -191,8 +192,8 @@ var bmk = [
 	],
 	[	[2, 'Daily', 1, 1],
 		[0, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 영화"],
-		[1, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_dramacap", "드라마"],
-		[0, "https://torrentqq331.com/torrent/mov.html", "토렌트큐큐 - 영화"],
+		[1, "https://cineaste.co.kr/bbs/board.https://torrentqq334.com/torrent/mov.htmlphp?bo_table=psd_dramacap", "드라마"],
+		[0, "", "토렌트큐큐 - 영화"],
 		[0, "https://1337x.to/trending", "1337X Trending Today"],
 		[1, "https://1337x.to/trending/d/movies/", "Movies"]
 	],
