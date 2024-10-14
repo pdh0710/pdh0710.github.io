@@ -43,6 +43,7 @@ var bmk = [
 		[1, "https://www.bing.com/search?q=Bing+AI&showconv=1", "Copilot"],
 		[1, "https://www.bing.com/images/create", "Image Creator"],
 		[1, "https://www.microsoft365.com/", "Microsoft365"],
+		[0, "https://yandex.com/", "Yandex"],
 		[-1],
 		[0, "https://www.kobis.or.kr/", "영화관 입장권통합 전산망, 영화정보검색"],
 		[0, "https://www.imdb.com/search/", "IMDB Advanced Search"],
