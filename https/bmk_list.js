@@ -83,7 +83,6 @@ var bmk = [
 	],
 	[	[0, "My Web", 1, 0],
 		[0, "https://pdh0710.github.io/", "GitHub Page"],
-		[1, "https://pdh0710.github.io/https/", "HTTPS"],
 		[1, "https://github.com/pdh0710/pdh0710.github.io", "Project Page"],
 		[-1],
 		[0, "https://lime-worlds.duckdns.org/", "LimeLite Worlds"],
@@ -325,6 +324,7 @@ var bmk = [
 	[0, "https://quasarzone.com/bbs/qb_saleinfo", "퀘이사존 핫딜"],
 	[1, "https://www.ppomppu.co.kr/hotdeal/", "뽐뿌 핫딜"],
 	[1, "https://www.fmkorea.com/freedeal", "펨코 자유쇼핑"]
+	[1, "https://coolenjoy.net/bbs/jirum2", "쿨조 이벤트"]
 ],
 	[	[1, "Foreign", 1, 0],
 		[0, "https://www.amazon.com/", "Amazone"],
