@@ -290,7 +290,7 @@ var bmk = [
 		[1, "https://signinssl.gmarket.co.kr/LogIn/LogIn?URL=http://myg.gmarket.co.kr/", "G마켓"],
 		[1, "https://member.ssg.com/member/login.ssg?retURL=https%3A%2F%2Fwww.ssg.com%2Fmyssg%2Fmain.ssg%3Fgnb%3Dmyssg", "SSG"],
 		[1, "https://www.mysmilepay.com/", "스마일페이"],
-		[0, "https://login.coupang.com/login/login.pang?rtnUrl=https%3A%2F%2Fmc.coupang.com%2Fssr%2Fdesktop%2Forder%2Flist", "쿠팡"],
+		[0, "https://mc.coupang.com/ssr/desktop/order/list", "쿠팡"],
 		[1, "https://www.coupangplay.com/home", "쿠팡플레이"],
 		[0, "https://login.11st.co.kr/login/Login.tmall?returnURL=http%3A%2F%2Fbuy.11st.co.kr%2Forder%2FmyTmall.tmall%3Fmethod%3DgetMyTmallMain", "11번가"],
 		[0, "https://www.lotteon.com/p/display/main/lotteon", "롯데ON"],
