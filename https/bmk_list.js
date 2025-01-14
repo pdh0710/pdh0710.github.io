@@ -230,6 +230,7 @@ var bmk = [
 		[1, "https://crates.io/", "crate registry"],
 		[0, "https://www.php.net/", "PHP"],
 		[0, "https://www.lua.org/", "Lua"],
+		[1, "https://luajit.org/", "LuaJIT"],
 		[0, "http://lesscss.org/", "{less}"],
  		[0, "https://www.typescriptlang.org/", "TypeScript"],
 		[0, "https://www.pcre.org/", "PCRE - Perl Compatible Regular Expressions"],
