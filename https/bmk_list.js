@@ -6,7 +6,7 @@ var bmk = [
 	[	[0, "Daily News", 1, 1],
 		[0, "https://apod.nasa.gov/apod/astropix.html", "Astronomy Picture of the Day"],
 //		[0, "https://twitter.com/dailygalaxy", "The Daily Galaxy Twitter"],
-		[0, "https://www.sciencetimes.co.kr/category/sci-tech/", "Sciencetimes 한국- 뉴스"],
+		[0, "https://www.sciencetimes.co.kr/nscvrg/list/menu/247?searchCategory=216", "Sciencetimes 한국- 뉴스"],
 		[0, "https://www.dpreview.com/", "Digital Photography Review"],
 		[0, "https://www.boannews.com/media/list.asp?mkind=1", "보안 뉴스 - Security"],
 		[0, "https://zdnet.co.kr/news/?lstcode=0000&page=1", "지디넷코리아 - 최신 뉴스"],
@@ -193,7 +193,7 @@ var bmk = [
 	[	[2, 'Daily', 1, 1],
 		[0, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 영화"],
 		[1, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_dramacap", "드라마"],
-		[0, "https://torrentqq349.com/torrent/mov.html", "토렌트큐큐 - 영화"],
+		[0, "https://torrentqq350.com/torrent/mov.html", "토렌트큐큐 - 영화"],
 		[0, "https://1337x.to/trending", "1337X Trending Today"],
 		[1, "https://1337x.to/trending/d/movies/", "Movies"]
 	],
