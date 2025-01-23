@@ -189,11 +189,11 @@ var bmk = [
 		[0, "https://thepiratebay.org/", "The Pirate Bay"],
 		[0, "https://1337x.to/home/", "1337X : Verified Torrents"],
 		[0, "https://glodls.to/home.php", "GloTorrents"]
-	],
+	],https://torrentqq352.com/torrent/mov.html
 	[	[2, 'Daily', 1, 1],
 		[0, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 영화"],
 		[1, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_dramacap", "드라마"],
-		[0, "https://torrentqq350.com/torrent/mov.html", "토렌트큐큐 - 영화"],
+		[0, "", "토렌트큐큐 - 영화"],
 		[0, "https://1337x.to/trending", "1337X Trending Today"],
 		[1, "https://1337x.to/trending/d/movies/", "Movies"]
 	],
