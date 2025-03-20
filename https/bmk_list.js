@@ -194,7 +194,7 @@ var bmk = [
 	[	[2, 'Daily', 1, 1],
 		[0, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 영화"],
 		[1, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_dramacap", "드라마"],
-		[0, "https://torrentqq359.com/torrent/mov.html", "토렌트큐큐 - 영화"],
+		[0, "https://torrentqq360.com/torrent/mov.html", "토렌트큐큐 - 영화"],
 		[0, "https://1337x.to/trending", "1337X Trending Today"],
 		[1, "https://1337x.to/trending/d/movies/", "Movies"]
 	],
@@ -248,6 +248,7 @@ var bmk = [
 		[-1],
 		[0, "https://nginx.org/", "Nginx"],
 		[1, "https://forum.nginx.org/", "Forum"],
+		[1, "https://openresty.org/", "OpenResty"],
 		[0, "https://httpd.apache.org/", "Apache HTTPd"],
 		[1, "https://www.apachelounge.com/", "Apache Lounge"],
 		[-1],
