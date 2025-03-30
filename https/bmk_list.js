@@ -56,6 +56,7 @@ var bmk = [
 	[	[1, "Google", 1, 0],
 		[0, "https://www.google.com/", "Google"],
 		[1, "https://gemini.google.com/", "Gemini"],
+		[1, "https://aistudio.google.com/", "AI Studio"],
 		[0, "https://mail.google.com/mail/u/0/#all", "Gmail"],
 		[0, "https://drive.google.com/drive/", "Drive"], [1, "https://colab.research.google.com/", "Colab"],
 		[0, "https://keep.google.com/", "Keep "],
@@ -194,7 +195,7 @@ var bmk = [
 	[	[2, 'Daily', 1, 1],
 		[0, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 영화"],
 		[1, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_dramacap", "드라마"],
-		[0, "https://torrentqq360.com/torrent/mov.html", "토렌트큐큐 - 영화"],
+		[0, "https://torrentqq361.com/torrent/mov.html", "토렌트큐큐 - 영화"],
 		[0, "https://1337x.to/trending", "1337X Trending Today"],
 		[1, "https://1337x.to/trending/d/movies/", "Movies"]
 	],
