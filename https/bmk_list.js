@@ -165,6 +165,8 @@ var bmk = [
 		[0, "https://tv.kakao.com/guide/potplayer", "카카오TV 팟플레이어"],
 		[0, "https://www.aimp.ru/", "AIMP"],
 		[0, "https://www.foobar2000.org/", "foobar2000"],
+		[0, "https://mp3gain.sourceforge.net/index.php", "mp3gain"],
+		[0, "https://www.mp3tag.de/en/index.html", "mp3tag"],
 		[0, "https://www.shotcut.org/", "Shotcut : free, open source, cross-platform video editor"],
 		[0, "https://github.com/Nevcairiel/LAVFilters/releases", "LAV Filters - releases"],
 		[0, "https://codecguide.com/download_kl.htm", "K-Lite Codec Pack"],
