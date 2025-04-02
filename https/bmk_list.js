@@ -163,6 +163,7 @@ var bmk = [
 		[-1],
 		[0, "https://www.faststone.org/", "FastStone Image Viewer"],
 		[0, "https://tv.kakao.com/guide/potplayer", "카카오TV 팟플레이어"],
+		[0, "https://www.kmplayer.com/", "KMPlayer"],
 		[0, "https://www.aimp.ru/", "AIMP"],
 		[0, "https://www.foobar2000.org/", "foobar2000"],
 		[0, "https://mp3gain.sourceforge.net/index.php", "mp3gain"],
