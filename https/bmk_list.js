@@ -42,6 +42,7 @@ var bmk = [
 		[1, "https://www.bing.com/search?q=Bing+AI&showconv=1", "Copilot"],
 		[1, "https://www.bing.com/images/create", "Image Creator"],
 		[1, "https://www.microsoft365.com/", "Microsoft365"],
+		[1, "https://onedrive.live.com/?id=root", "OneDrive"],
 		[0, "https://duckduckgo.com/", "DuckDuckGo"],
 		[0, "https://yandex.com/", "Yandex"],
 		[-1],
