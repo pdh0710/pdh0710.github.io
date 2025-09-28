@@ -328,6 +328,7 @@ var bmk = [
 		[0, "https://www.lottecinema.co.kr/", "롯데시네마"],
 		[-1],
 		[0, "https://www.netflix.com/", "Netflix"],
+		[1, "https://www.netflix.com/tudum", "tudum"],
 		[0, "https://www.disneyplus.com/", "Disney+"],
 		[0, "https://www.coupangplay.com/home", "쿠팡플레이"],
 		[-1],
