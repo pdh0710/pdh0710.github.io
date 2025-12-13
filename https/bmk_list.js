@@ -202,7 +202,7 @@ var bmk = [
 	[	[2, 'Daily', 1, 1],
 		[0, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 영화"],
 		[1, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_dramacap", "드라마"],
-		[0, "https://torrentqq395.com/torrent/mov.html", "토렌트큐큐 - 영화"],
+		[0, "https://torrentqq398.com/torrent/mov.html", "토렌트큐큐 - 영화"],
 		[0, "https://1337x.to/trending", "1337X Trending Today"],
 		[1, "https://1337x.to/trending/d/movies/", "Movies"]
 	],
@@ -345,6 +345,7 @@ var bmk = [
 ],
 	[	[1, "Foreign", 1, 0],
 		[0, "https://www.amazon.com/", "Amazone"],
+		[1, "https://www.amazon.co.jp/", "Japan"],
 		[1, "http://camelcamelcamel.com/", "camelcamelcamel, Amazone Price Tracker"],
 		[0, "https://www.newegg.com/global/kr-en/", "Newegg"],
 		[0, "http://www.ebay.com/", "Ebay"],
