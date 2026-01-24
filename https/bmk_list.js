@@ -206,7 +206,7 @@ var bmk = [
 		[0, "https://1337x.to/trending", "1337X Trending Today"],
 		[1, "https://1337x.to/popular-movies", "Movies"]
 	],
-	[	[0, "Develope", 1, 0],
+	[	[0, "Develope & Create", 1, 0],
 		[0, "https://github.com/", "GitHub"],
 		[0, "https://stackoverflow.com/", "StackOverflow"],
 		[0, "https://www.w3schools.com/", "w3schools"],
@@ -217,6 +217,7 @@ var bmk = [
 		[1, "https://html5test.com/", "HTML5test"],
 		[1, "https://www.koreahtml5.kr/main.do", "Korea HTML5"],
 		[-1],
+		[0, "https://www.gimp.org/", "GIMP"],
 		[0, "https://www.blender.org/", "Blender"],
 		[0, "https://www.freecad.org/", "FreeCAD"],
 		[1, "https://forum.freecad.org/index.php", "forum"],
