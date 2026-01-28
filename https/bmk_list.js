@@ -152,7 +152,11 @@ var bmk = [
 		[0, "https://mxtoolbox.com/", "MX Lookup Tool - Check your DNS MX Records online"],
 		[0, "https://xn--c79as89aj0e29b77z.xn--3e0b707e/", "KISA - Whois Search"],
 		[0, "https://www.ipaddress.com/", "What Is My IP Address?"],
-		[0, "https://macvendors.com/", "Find MAC Address Vendors"]
+		[0, "https://macvendors.com/", "Find MAC Address Vendors"],
+		[-1],
+		[0, "https://www.wolframalpha.com/", "Wolfram Alpha 계산 지능"],
+		[0, "https://www.mathway.com/", "Mathway 수식 풀이, 그래프"],
+		[0, "https://photomath.com/", "PhotoMath : 사진으로 수식 풀이"]
 	],
 	[	[1, "Program", 1, 0],
 		[0, "https://www.cpuid.com/", "CPU-Z & HWmonitor"],
