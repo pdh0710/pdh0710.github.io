@@ -156,6 +156,7 @@ var bmk = [
 		[-1],
 		[0, "https://www.wolframalpha.com/", "Wolfram Alpha 계산 지능"],
 		[0, "https://www.mathway.com/", "Mathway 수식 풀이, 그래프"],
+		[0, "https://www.desmos.com/", "Demos 각종 계산기, 그래프, 3D 그래프"],
 		[0, "https://photomath.com/", "PhotoMath : 사진으로 수식 풀이"]
 	],
 	[	[1, "Program", 1, 0],
