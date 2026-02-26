@@ -188,6 +188,7 @@ var bmk = [
 		[0, "https://www.chiark.greenend.org.uk/~sgtatham/putty/", "PuTTY"],
 //		[1, "https://github.com/iPuTTY/iPuTTY", "한국어 PuTTY"],
 		[0, "https://winscp.net/eng/index.php", "WinSCP"],
+		[0, "https://rclone.org/", "Rclone"],
 		[0, "http://www.uvnc.com/", "UltraVNC VNC Official"],
 		[0, "https://github.com/ValdikSS/GoodbyeDPI", "GoodbyeDPI"],
 		[1, "https://github.com/ValdikSS/GoodbyeDPI/releases", "Releases"],
@@ -207,7 +208,7 @@ var bmk = [
 	[	[2, 'Daily', 1, 1],
 		[0, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 영화"],
 		[1, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_dramacap", "드라마"],
-		[0, "https://torrentqq404.com/torrent/mov.html", "토렌트큐큐 - 영화"],
+		[0, "https://torrentqq408.com/torrent/mov.html", "토렌트큐큐 - 영화"],
 		[0, "https://1337x.to/trending", "1337X Trending Today"],
 		[1, "https://1337x.to/popular-movies", "Movies"]
 	],
