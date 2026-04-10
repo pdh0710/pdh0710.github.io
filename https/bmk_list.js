@@ -75,8 +75,9 @@ var bmk = [
 		[1, "https://music.youtube.com/", "Music"]
 	],
 	[	[1, "SNS & BBS", 1, 0],
-		[0, "https://twitter.com/login", "Twitter"],
+		[0, "https://x.com/login", "X / Twitter"],
 		[0, "https://www.facebook.com/", "Facebook"],
+		[1, "https://www.instagram.com/", "Instagram"],
 		[0, "https://brunch.co.kr/", "카카오 브런치"],
 		[0, "https://www.blogger.com/", "Blogger.com"],
 		[-1],
@@ -209,7 +210,7 @@ var bmk = [
 	[	[2, 'Daily', 1, 1],
 		[0, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 영화"],
 		[1, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_dramacap", "드라마"],
-		[0, "https://torrentqq412.com/torrent/mov.html", "토렌트큐큐 - 영화"],
+		[0, "https://torrentqq415.com/torrent/mov.html", "토렌트큐큐 - 영화"],
 		[0, "https://1337x.to/trending", "1337X Trending Today"],
 		[1, "https://1337x.to/popular-movies", "Movies"]
 	],
