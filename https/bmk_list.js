@@ -167,7 +167,7 @@ var bmk = [
 		[0, "https://www.hwinfo.com/", "HW Info"],
 		[0, "https://www.virtualbox.org/", "Oracle VM VirtualBox"],
 		[0, "https://remiz.co.kr/", "Remiz"],
-		[0, "https://notepad-plus-plus.org/", "Notepad++ Home"],
+		[0, "https://www.7-zip.org/", "7-Zip"],
 		[0, "https://www.sumatrapdfreader.org/", "Sumatra Free PDF Reader"],
 		[0, "https://www.partitionwizard.com/free-partition-manager.html", "MiniTool Partition Wizard Free"],
 		[0, "https://www.sordum.org/8366/reicon-v2-0-restore-desktop-icon-layouts/", "ReIcon : Restore Desktop Icon Layouts"],
@@ -202,7 +202,6 @@ var bmk = [
 	[	[1, "Torrent", 0, 0],
 		[0, "https://convert.jamack.net/", "Online 자막 변환기"],
 //		[0, "https://bunco.co/", "번코"],
-		[0, "https://rankers.info/", "토렌트큐큐 최근 주소"],
 		[0, "https://thepiratebay.org/", "The Pirate Bay"],
 		[0, "https://1337x.to/home/", "1337X : Verified Torrents"],
 		[0, "https://glodls.to/home.php", "GloTorrents"]
@@ -210,7 +209,7 @@ var bmk = [
 	[	[2, 'Daily', 1, 1],
 		[0, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_caption", "씨네스트 - 영화"],
 		[1, "https://cineaste.co.kr/bbs/board.php?bo_table=psd_dramacap", "드라마"],
-		[0, "https://torrentqq415.com/torrent/mov.html", "토렌트큐큐 - 영화"],
+		[0, "https://torrentqq417.com/torrent/mov.html", "토렌트큐큐 - 영화"],
 		[0, "https://1337x.to/trending", "1337X Trending Today"],
 		[1, "https://1337x.to/popular-movies", "Movies"]
 	],
