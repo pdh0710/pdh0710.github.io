@@ -1,0 +1,105 @@
+/* background image
+
+https://developer.mozilla.org/ko/docs/Web/Guide/CSS/Media_queries
+
+@media screen and (min-aspect-ratio: 1/1)
+
+### @media rule은 mobile first로 작성해야 함.
+	desktop first로 작성할 경우, mobile web browser가 desktop용 resource(아래의 경우 wallpaper)까지 load할 수 있음.
+
+처음에는 아래 부분을 body에 공통으로 선언하고, @media rule로는 background-image만을 선언했는데...
+
+background-repeat:no-repeat; background-attachment:fixed; background-position:center; background-size:cover;
+
+그랬더니 mobile browser에서 "background-size:cover;"가 제대로 듣지 않는 문제가 발생 -_-;;;
+*/
+@media screen and (orientation: landscape) {
+  body {
+    background: url("wl-1200-675.jpg") no-repeat fixed;
+    background-position: center center;
+    background-size: auto 120%;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 1201px) {
+  body {
+    background: url("wl-1600-900.jpg") no-repeat fixed;
+    background-position: center center;
+    background-size: auto 120%;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 1601px) {
+  body {
+    background: url("wl-1920-1080.jpg") no-repeat fixed;
+    background-position: center center;
+    background-size: auto 120%;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 1921px) {
+  body {
+    background: url("wl-2560-1440.jpg") no-repeat fixed;
+    background-position: center center;
+    background-size: auto 120%;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 2561px) {
+  body {
+    background: url("wl-3200-1800.jpg") no-repeat fixed;
+    background-position: center center;
+    background-size: auto 120%;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 3201px) {
+  body {
+    background: url("wl-3840-2160.jpg") no-repeat fixed;
+    background-position: center center;
+    background-size: auto 120%;
+  }
+}
+@media screen and (orientation: portrait) {
+  body {
+    background: url("wp-675-1200.jpg") no-repeat fixed;
+    background-position: center center;
+    background-size: 120% auto;
+  }
+}
+@media screen and (orientation: portrait) and (min-height: 1201px) {
+  body {
+    background: url("wp-900-1600.jpg") no-repeat fixed;
+    background-position: center center;
+    background-size: 120% auto;
+  }
+}
+@media screen and (orientation: portrait) and (min-height: 1601px) {
+  body {
+    background: url("wp-1080-1920.jpg") no-repeat fixed;
+    background-position: center center;
+    background-size: 120% auto;
+  }
+}
+@media screen and (orientation: portrait) and (min-height: 1921px) {
+  body {
+    background: url("wp-1440-2560.jpg") no-repeat fixed;
+    background-position: center center;
+    background-size: 120% auto;
+  }
+}
+@media screen and (orientation: portrait) and (min-height: 2561px) {
+  body {
+    background: url("wp-1800-3200.jpg") no-repeat fixed;
+    background-position: center center;
+    background-size: 120% auto;
+  }
+}
+@media screen and (orientation: portrait) and (min-height: 3201px) {
+  body {
+    background: url("wp-2160-3840.jpg") no-repeat fixed;
+    background-position: center center;
+    background-size: 120% auto;
+  }
+}
+
+BODY {
+	margin: 0;
+	padding: 20px;
+	background-color: black;
+}

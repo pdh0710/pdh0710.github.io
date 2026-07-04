@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<TITLE>Weather Icons</TITLE>
+<style>
+*,
+*::before,
+*::after {
+	margin:	0;
+	padding: 0;
+	-webkit-box-sizing:	border-box;
+	box-sizing:	border-box;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+*:focus	{
+	outline: none;
+}
+HTML, BODY {
+	margin:	0;
+	padding: 0;
+	width: 100%;
+	height:	100%;
+	font-size: 100%;
+	font-family: sans-serif;
+}
+
+BODY {
+	background-color: #80b8f0;
+}
+.bg {
+	position: fixed;
+	z-index: -1;
+	background:	radial-gradient(ellipse closest-corner, #fff, #78b0e8);
+	width: 100%;
+	height:	100%;
+	padding: 0;
+	margin: 0;
+}
+
+body, table, th, td {
+    font-size: 100%;
+    color: #000000;
+}
+
+.head {
+	text-align:center;
+}
+.head p {
+	text-align:center;
+	margin:1.2rem auto;
+	display: inline-block;
+	padding:0.8rem 1.5rem;
+	font-weight: bold;
+	font-size: 1.1rem;
+	color:white;
+	/* text-shadow:0 0 0.2rem #125; */
+	background-color: HSL(15,71%,53%);
+	border-radius: 0.35rem;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+	width:95%;
+	max-width: 720px;
+	margin: 0 auto;
+	background-color:#fffbf8;
+	border-radius: 0.35rem;
+	overflow: hidden;
+}
+.table-col img {
+    vertical-align: middle;
+}
+.table-col td:first-of-type {
+    border-left: 0;
+}
+.table-col thead td{
+    padding: 0.9rem;
+    text-align: center;
+	font-weight: bold;
+	font-size: 0.96rem;
+	color:white;
+	background-color: HSL(205,71%,43%);
+    border-left: 0.1rem solid #e0e6ef;
+	border-top: 0;
+	border-bottom: 0;
+}
+.table-col td {
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    border-bottom: 0.1rem solid #e0e6ef;
+    border-left: 0.1rem solid #e0e6ef;
+	line-height: 1.6;
+}
+.table-col .no_left_border {
+	border-left: 0;
+	text-align: left;
+	padding:0.7rem 0;
+}
+.table-col .ic_img {
+    height: auto;
+    width: auto;
+}
+.table-col .buoy_wind {
+    width: 90%;
+	max-width: 186px;
+}
+.table-col .info {
+    padding: 1rem;
+	font-size: 0.9rem;
+	text-align: left;
+}
+
+.table-col .span_like {
+	display: inline-block;
+	text-align: left;
+	padding: 0.3rem;
+}
+
+@media (max-width: 639px) {
+	/* .head p {
+		margin:1.2rem 0rem 0.08rem 0rem;
+		width: 100%;
+		border-radius: 0;
+	} */
+	table {
+		width: 100%;
+		border-radius: 0;
+	}
+}
+</style>
+</head>
+<body><div class="bg"></div>
+	<div class="head"><p>한국 기상청 날씨 아이콘</p></div>
+	<table class="table-col">
+		<colgroup>
+			<col style="width:20%">
+			<col style="width:30%">
+			<col style="width:20%">
+			<col style="width:30%">
+		</colgroup>
+		<thead>
+		<tr>
+			<td scope="col">아이콘</td>
+			<td scope="col">설명</td>
+			<td scope="col">아이콘</td>
+			<td scope="col">설명</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><img class="ic_img" src="NB01.png" alt="맑음"></td>
+			<td>맑음</td>
+			<td><img class="ic_img" src="NB01_N.png" alt="맑음 (밤)"></td>
+			<td>맑음 (밤)</td>
+		</tr>
+		<tr>
+		  <td><img class="ic_img" src="NB02.png" alt="구름조금 (낮)"></td>
+		  <td>구름조금 (낮)</td>
+		  <td><img class="ic_img" src="NB02_N.png" alt="구름조금 (밤)"></td>
+		  <td>구름조금 (밤)</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB03.png" alt="구름많음 (낮)"></td>
+			<td>구름많음 (낮)</td>
+			<td><img class="ic_img" src="NB03_N.png" alt="구름많음 (밤)"></td>
+			<td>구름많음 (밤)</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB04.png" alt="흐림"></td>
+			<td>흐림</td>
+			<td><img class="ic_img" src="NB07.png" alt="소나기"></td>
+			<td>소나기</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB08.png" alt="비"></td>
+			<td>비</td>
+			<td><img class="ic_img" src="NB20.png" alt="가끔 비, 한때 비"></td>
+			<td>가끔 비, 한때 비</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB11.png" alt="눈"></td>
+			<td>눈</td>
+			<td><img class="ic_img" src="NB21.png" alt="가끔 눈, 한때 눈"></td>
+			<td>가끔 눈, 한때 눈</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB12.png" alt="비 또는 눈"></td>
+			<td>비 또는 눈</td>
+			<td><img class="ic_img" src="NB22.png" alt="가끔 비 또는 눈, 한때 비 또는 눈 "></td>
+			<td>가끔 비 또는 눈, <br>한때 비 또는 눈</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB13.png" alt="눈 또는 비"></td>
+			<td>눈 또는 비</td>
+			<td><img class="ic_img" src="NB23.png" alt="가끔 눈또는 비, 한때 눈 또는 비"></td>
+			<td>가끔 눈 또는 비,<br>한때 눈 또는 비</td>
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="DB_LGT.png" alt="낙뢰"></td>
+			<td>낙뢰</td>
+			<td><img class="ic_img" src="DB10.png" alt="빗방울"></td>
+			<td>빗방울</td>					
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB18.png" alt="연무"></td>
+			<td>연무</td>
+			<td><img class="ic_img" src="DB12.png" alt="눈날림"></td>
+			<td>눈날림</td>						
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB15.png" alt="안개"></td>
+			<td>안개</td>
+			<td><img class="ic_img" src="NB17.png" alt="박무 (엷은 안개)"></td>
+			<td>박무 (엷은 안개)</td>				
+		</tr>
+		<tr>
+			<td><img class="ic_img" src="NB16.png" alt="황사"></td>
+			<td>황사</td>
+			<td colspan="2" rowspan="2">
+				<div class="info"><br />• 한국 기상청에서 사용하는 날씨 아이콘(날씨기호)의 의미를 설명하는 도표입니다. [출처 : <a target="_blank" href="https://www.weather.go.kr/w/index.do">한국기상청 날씨누리</a> 날씨기호 설명]<br /><br />• 날씨 아이콘 저작물은 <strong>"공공누리" <a rel="license" href="http://www.kogl.or.kr/open/koglLicenseInfoView.do?license_type=4&amp;egov_code=372&amp;license_idx=13251" target="_blank"> 출처표시-상업적이용금지-변경금지 </a> 조건</strong>에 따라 이용할 수 있습니다.</div>
+				<a rel="license" target="_blank" href="http://www.kogl.or.kr/open/koglLicenseInfoView.do?license_type=4&amp;egov_code=372&amp;license_idx=13251"><img alt="공공누리" src="https://www.kogl.or.kr/open/web/images/content/symbol04.gif" class="ic_img"></a><br /><br />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><img src="NB24.png" alt="부이" class="buoy_wind"> <div class="span_like">풍향 표시 방법과<br />바다 부이의 표시 내용</div></td>
+		</tr>
+		</tbody>
+	</table>
+	<div class="head"><p>강수 아이콘 구분 안내</p></div>
+	<table class="table-col">
+		<colgroup>
+			<col style="width:16%">
+			<col style="width:14%">
+			<col style="width:20%">
+			<col style="width:14%">
+			<col style="width:36%">
+		</colgroup>
+		<thead>
+		<tr>
+			<td scope="col">구분</td>
+			<td colspan="2" scope="col">지속적 강수</td>
+			<td colspan="2" scope="col">일시적 강수</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>비</td>
+			<td><img class="ic_img" src="NB08.png" alt="비"></td>
+			<td class="no_left_border">흐리고 비</td>
+			<td><img class="ic_img" src="NB20.png" alt="가끔 비, 한때 비"></td>
+			<td class="no_left_border">구름 많고 비<br />구름 많고 가끔(한때) 비<br />흐리고 가끔(한때) 비</td>
+		</tr>
+		<tr>
+			<td>눈</td>
+			<td><img class="ic_img" src="NB11.png" alt="눈"></td>
+			<td class="no_left_border">흐리고 눈</td>
+			<td><img class="ic_img" src="NB21.png" alt="가끔 눈, 한때 눈"></td>
+			<td class="no_left_border">구름 많고 눈<br />구름 많고 가끔(한때) 눈<br />흐리고 가끔(한때) 눈</td>
+		</tr>
+		<tr>
+			<td>비 또는 눈</td>
+			<td><img class="ic_img" src="NB12.png" alt="비 또는 눈"></td>
+			<td class="no_left_border">흐리고 비 또는 눈</td>
+			<td><img class="ic_img" src="NB22.png" alt="가끔 비 또는 눈, 한때 비 또는 눈 "></td>
+			<td class="no_left_border">구름 많고 비 또는 눈<br />구름 많고 가끔(한때) 비 또는 눈<br />흐리고 가끔(한때) 비 또는 눈</td>
+		</tr>
+		<tr>
+			<td>눈 또는 비</td>
+			<td><img class="ic_img" src="NB13.png" alt="눈 또는 비"></td>
+			<td class="no_left_border">흐리고 눈 또는 비</td>
+			<td><img class="ic_img" src="NB23.png" alt="가끔 눈또는 비, 한때 눈 또는 비"></td>
+			<td class="no_left_border">구름 많고 눈 또는 비<br />구름 많고 가끔(한때) 눈 또는 비<br />흐리고 가끔(한때) 눈 또는 비</td>
+		</tr>
+		</tbody>
+	</table>
+	<p>&nbsp;</p>
+</body>
+</html>

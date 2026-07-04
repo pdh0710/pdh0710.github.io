@@ -1,0 +1,92 @@
+[
+	{
+		"id" : 1,
+		"name" : "Portal",
+		"parent" : 0
+	},
+	{
+		"id" : 2,
+		"name" : "Daily News",
+		"parent" : 0
+	},
+	{
+		"id" : 3,
+		"name" : "Company",
+		"parent" : 0
+	},
+	{
+		"id" : 4,
+		"name" : "Google",
+		"parent" : 3
+	},
+	{
+		"id" : 5,
+		"name" : "다음/카카오",
+		"parent" : 3
+	},
+	{
+		"id" : 6,
+		"name" : "네이버",
+		"parent" : 3
+	},
+	{
+		"id" : 7,
+		"name" : "Microsoft",
+		"parent" : 0
+	},
+	{
+		"id" : 8,
+		"name" : "SNS",
+		"parent" : 0
+	},
+	{
+		"id" : 9,
+		"name" : "Blog",
+		"parent" : 0
+	},
+	{
+		"id" : 10,
+		"name" : "BBS",
+		"parent" : 0
+	},
+	{
+		"id" : 11,
+		"name" : "지도",
+		"parent" : 0
+	},
+	{
+		"id" : 12,
+		"name" : "번역",
+		"parent" : 0
+	},
+	{
+		"id" : 13,
+		"name" : "검색",
+		"parent" : 0
+	},
+	{
+		"id" : 14,
+		"name" : "기록",
+		"parent" : 0
+	},
+	{
+		"id" : 15,
+		"name" : "문서",
+		"parent" : 0
+	},
+	{
+		"id" : 16,
+		"name" : "저장",
+		"parent" : 0
+	},
+	{
+		"id" : 17,
+		"name" : "메일",
+		"parent" : 0
+	},
+	{
+		"id" : 18,
+		"name" : "News",
+		"parent" : 0
+	}
+]
