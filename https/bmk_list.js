@@ -76,6 +76,7 @@ var bmk = [
 	],
 	[	[1, "SNS & BBS", 1, 0],
 		[0, "https://x.com/login", "X / Twitter"],
+		[0, "https://bsky.app/", "Bluesky"],
 		[0, "https://www.facebook.com/", "Facebook"],
 		[1, "https://www.instagram.com/", "Instagram"],
 		[0, "https://brunch.co.kr/", "카카오 브런치"],
